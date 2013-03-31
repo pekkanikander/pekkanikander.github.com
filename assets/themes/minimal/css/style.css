@@ -14,6 +14,15 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+ul, ol {
+  margin-left:2.5em;
+}
+
+li > p {
+  margin-top:0;
+  margin-bottom:0;
+}
+
 h1, h2, h3 {
   line-height:1.1;
 }
@@ -140,10 +149,6 @@ header li:first-child a {
 
 header li:last-child a {
   border-radius:0 5px 5px 0;
-}
-
-ul {
-  padding-left: 20px;
 }
 
 header ul a {
