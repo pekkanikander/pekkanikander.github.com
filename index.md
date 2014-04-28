@@ -47,7 +47,7 @@ Pekka Nikander is a software architect and lead programmer with over
   Proceedings of Cambridge Security Protocols Workshop 2000, April
   3-5, 2000, Cambridge University.
 
-[Full publication list](http://koti.welho.com/pnikande/publications/index.html)
+[Full publication list](publications.html)
 
 [Some presentations](http://koti.welho.com/pnikande/presentations/)
 
