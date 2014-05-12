@@ -8,6 +8,13 @@ tagline:
 Pekka Nikander is a software architect and lead programmer with over
 25 years of industry experience, with an inkling for embedded and things.
 
+Please note that many links below are broken, due to my previous web
+site provider trashing my site and not having time to fish the content
+back.  If you are interested in any of my papers or past projects,
+feel free to send e-mail to me, and I'll add the material to the
+website and mail back to you.  I usually respond to e-mail within a
+day or two.
+
 ## Freelancing
 
 I'm available for interesting open source projects about 50% of my time, through the [Ell-i open source co-operative](http://ell-i.org/about). 
