@@ -6,7 +6,15 @@ tagline:
 {% include JB/setup %}
 
 Pekka Nikander is a software architect and lead programmer with over
-25 years of industry experience, with an inkling for embedded and things. 
+25 years of industry experience, with an inkling for embedded and things.
+
+## Freelancing
+
+I'm available for interesting open source projects about 50% of my time, through the [Ell-i open source co-operative](http://ell-i.org/about). 
+
+<div class="dark" id="flm-profile-widget"><a href="http://www.freelancermap.com/freelancers-directory/freelancer-profiles/network-security/95161-profil-pekka-nikander-systems-software-developer-from-fpga-to-javascript.html">Profile on freelancermap</a></div>
+<script src="//www.freelancermap.com/js/widgets/profile.js"></script>
+<script>flm_profile.init({profile_id:95161, showImage:false, showName:false})</script>
 
 ## Thoughts
 
