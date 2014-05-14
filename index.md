@@ -8,6 +8,10 @@ tagline:
 Pekka Nikander is a software architect and lead programmer with over
 25 years of industry experience, with an inkling for embedded and things.
 
+I prefer e-mail for communication, and don't answer to cold phone calls.
+
+Email: firstname dot lastname at iki dot fi
+
 Please note that many links below are broken, due to my previous web
 site provider trashing my site and not having time to fish the content
 back.  If you are interested in any of my papers or past projects,
