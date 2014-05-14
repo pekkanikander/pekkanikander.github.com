@@ -35,6 +35,15 @@ main practises. With his team, he implemented the Senseg software
 architecture, iterating in three major rounds, each time adding
 significant functionality.
 
+In May 2013, Pekka founded the Ell-i open source co-operative with a
+dozen of other people.  From May 2013 until April 2014, pushing the
+Ell-i technical platform has been his main hobby.  In May 2014 Ell-i
+became a part-time job for Pekka.
+
+In May 2014, Pekka was nominated a Research Fellow at Aalto University
+school of Science and Technology (the former Helsinki University of
+Technology).
+
 Pekka is first and foremost a generalist. He has more than 10 years of
 experience, both at personal and at group-leadership level, on
 architecting, designing, and implementing secure and scalable
@@ -65,6 +74,14 @@ patents.
 ## Experience
 
 <dl>
+  <dt>Research Fellow, Aalto University, 2014-present</dt>
+
+  <dd>Research on distributed embedded systems, especially security.</dd>
+
+  <dt>Co-Founder, Ell-i co-operative, 2013-present</dt>
+
+  <dd>Developing open source hardware and software for fixed IoT.</dd>
+
   <dt>Chief Software Architect, Senseg, 2011-present</dt>
 
   <dd>Creation of the software architecture and software team from the
