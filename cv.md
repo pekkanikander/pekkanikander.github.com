@@ -37,12 +37,10 @@ significant functionality.
 
 In May 2013, Pekka founded the Ell-i open source co-operative with a
 dozen of other people.  From May 2013 until April 2014, pushing the
-Ell-i technical platform has been his main hobby.  In May 2014 Ell-i
-became a part-time job for Pekka.
-
-In May 2014, Pekka was nominated a Research Fellow at Aalto University
-school of Science and Technology (the former Helsinki University of
-Technology).
+Ell-i technical platform was his main "hobby".  In May 2014 Ell-i
+became a part-time job for Pekka.  In May 2014, Pekka was nominated a
+Research Fellow at Aalto University school of Science and Technology
+(the former Helsinki University of Technology).
 
 Pekka is first and foremost a generalist. He has more than 10 years of
 experience, both at personal and at group-leadership level, on
@@ -52,7 +50,7 @@ has written some half a million lines of code, mostly in C and Java
 but also in a dozen or so other languages, including Verilog, various
 assemblers, C++, JavaScript, Python, Ruby, SmallTalk, Scheme, and
 Common Lisp. The platforms range from the Stanford NetFPGA through
-Atmel microcontrollers, various Unix kernels and the iPhone, to the
+microcontrollers, various Unix kernels and the iPhone, to the
 LLVM compiler toolkit and system dynamics modelling.
 
 In addition to the technical skills, Pekka has had a leadership role
