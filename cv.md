@@ -12,6 +12,9 @@ school, five years later patching live UNIX kernel to fix bugs. In
 1988 he founded Nixu, today a leading computer and network security
 consultant company in Finland, driving it for over 10 years, followed
 by another 10 years at various leadership roles at Ericsson Research.
+Today Pekka has multiple roles, acting as the Chief Software Architect
+at Senseg, leading IoT developmet at Ell-i co-operative, and
+influencing at Aalto University as a Research Fellow.
 
 During the time at Ericsson he grew to be an internationally
 recognised expert in Internet architecture, with special attention to
