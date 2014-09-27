@@ -1,0 +1,966 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+    <title>
+      2002 Usenix Annual Technical Conference -- as seen by Pekka Nikander
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+      body {
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: sans-serif ;
+      }
+      h1 { margin-left: -8%; }
+      h2,h3,h4,h5,h6 { margin-left: -3%; }
+    </style>
+  </head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app0.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/koti.welho.com\/pnikande\/usenix2002-report.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "8";
+var displayMonth = "Apr";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://koti.welho.com/pnikande/usenix2002-report.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20120408015509" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Mar
+                       
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 1:55:09 Apr 8, 2012">APR</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       May
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+                       
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 1:55:09 Apr 8, 2012">8</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 1:55:09 Apr 8, 2012">2012</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2013
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20120408015509*/http://koti.welho.com/pnikande/usenix2002-report.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>1 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">8 Apr 12 - 8 Apr 12</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:3:000100000000_2013:-1:000000000000_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<h1>2002 Usenix Annual Technical Conference</h1>
+<h2>and related events</h2> 
+
+<p>
+<a href="/web/20120408015509/http://www.tml.hut.fi/~pnr"><em>Pekka Nikander</em></a>
+<img alt="Pekka Nikander" 
+     src="/web/20120408015509im_/http://koti.welho.com/pnikande/pnr-smaller.gif">
+</p>
+
+<p class="note">
+This is a <em>personal</em> report from my trip to California
+for the 
+<a href="/web/20120408015509/http://www.usenix.org/publications/library/proceedings/usenix02/">
+2002 Usenix Annual Technical Conference,</a> held at 
+<a href="/web/20120408015509/http://www.monterey.org/mcc/">
+Monterey Confence Centre</a>.  This documents contains some
+technical and research related material, but mostly deals with
+interesting people, some food (but almost no wine and no exceptional
+experiences), and maybe also a couple of interesting ideas of stuff.
+The style is narrative, mostly to make it easier for <em>me</em>
+to remember what actually happened, and what kind of connections I was
+able to do.</p>
+
+<h2>For the impatient</h2>
+
+<p>
+  <img alt="Monterey Conference Center"
+     src="/web/20120408015509im_/http://www.montereyconferencecenter.com/images/jshome/mccjshome10.jpg">
+</p>
+
+<p>If you are impatient and only interested in some specific stuff,
+here are the links: </p>
+<ul>
+  <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#citris">CITRIS meeting on Tuesday</a></li>
+  <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#docomo">DoCoMoLabs USA</a></li>
+  <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#lessig">Lawrence Lessig's Keynote Speech</a></li>
+  <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#venti">Venti, a block storage system</a></li>
+  <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#schneier">Bruce Schneier's Invited Talk</a></li>
+  <li>Interesting people
+     <ul>
+       <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#berson">Tom Berson</a></li>
+       <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#honey">Peter Honeyman</a></li>
+       <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#hagen">Teus Hagen</a></li>
+       <li><a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#pike">Rob Pike</a></li>
+     </ul>
+  </li>
+</ul>
+
+<h2>General remarks</h2>
+
+<p>For me, Usenix does not seem like a conference worth visiting any
+more.  It is too much operating systems oriented, and I am not an OS
+guy any more.  On the other hand, the trip was certainly worth taking,
+largely due to the chance to create so many contacts with the Berkeley
+people at the CITRIS meeting <a href="/web/20120408015509/http://koti.welho.com/pnikande/usenix2002-report.html#citris">(see below)</a>.  But
+still, I had good talks and met interesting people at the conference
+site corridors and during coffee breaks.</p>
+
+<p>Thus, there were lots of talking and ideas for hacks
+that use positioning, GPS etc, or connect devices in a stranged way,
+like putting a digital camera directly to WLAN (it didn't work).  And
+having fun with gedgets in general. </p>
+
+<p>I became to the conclusion that I definitely need to beef up my toy
+budjet in a way or another.  Right now I am acting far too
+regressively, relying on old stuff that works, and therefore I am
+dropping behind on what actially can be done with the new cool stuff.
+Now that I don't have enough of money on your toy budget, I end up
+only buying those toys that <em>look</em> useful before I buy
+them. That usually means they are the wrong toys, those that are not
+fun at all after all and end up on the shelf instead of getting
+actually used.</p>
+
+<p>To summarize: You can't build infrastructure without understanding
+the users and their needs, and the manifestation of those needs in the
+form of appliances.  Motto:  Buy gadgets, and use them.</p>
+
+<h2>Monday June 10th</h2>
+
+<p id="roth">I arrived at SFO at 12:30pm, after having been able to do quite a
+lot of serious work during the flights, including paper review, slide
+preparation, and other stuff.  The weather was somewhat hot, but not too
+bad.  I quickly got my rental car and headed towards Berkeley,
+arriving there few minutes before 2pm.  After some hassle I found
+myself drinking decent cappucino at 
+<a href="/web/20120408015509/http://www-personal.si.umich.edu/~ishriles/cafe.proj/cafes/stradatitle.html">
+Cafe Strada</a> with 
+<a href="/web/20120408015509/http://www.igd.fhg.de/~vroth">Volker Roth</a> and 
+<a href="/web/20120408015509/http://www.hiit.fi/martti.mantyla/">Martti Mäntylä</a>.  
+We talked about
+security, trust, and user interfaces related stuff, finding out that
+most probably Volker and 
+<a href="/web/20120408015509/http://www.cs.hut.fi/~karvonen/">Kristiina Karvonen</a> may
+share some interests, and agent based search engines, which Martti
+found somewhat fascinating.</p>
+
+<p>After coffee Martti introduced me to SIMS, arranged my WLAN card to
+work on the SIMS network (thanks Martti!), and finally we went for a
+early dinner at a local Thai place, located two blocks down from
+Bancroft on Telegraph Avenue, half a block away from the Telegraph.
+We eventually shared the dishes, since the seafood platter Martti
+recommended was not quite worth mentioning, but the roasted duck he
+took himself was excellent.</p>
+
+<p>I stayed at 
+<a href="/web/20120408015509/http://www.radisson.com/berkeleyca/">Berkeley Marina Radisson</a>, 
+which was OK
+to stay at, but it is really in the middle of nothing.  Nice and cozy
+place to spend a peaceful night, but you need a car or take the bus to
+get somewhere.</p>
+
+<h2>Tuesday June 11th</h2>
+
+<p>I woke up at 5am, more or less as expected, and headed to the
+Berkeley campus to read e-mail as soon as possible.  It was fairly
+hard to find a good parking place that early, since all pay-per-hour
+public parking places were still closed, and there are only 2 hour
+parking places at the streets.  Finally I ended up parking the car at
+street, and moving it after 7am to the Student Union Garage.</p>
+
+<h3 id="citris">CITRIS Founding Corporate Members meeting</h3>
+
+<p>I spent most of my day at the CITRIS Founding Corporate Members
+meeting.  
+<a href="/web/20120408015509/http://www.citris.berkeley.edu/">CITRIS, 
+Center for Information Technology Research in the
+Interest to Society,</a> is a new University of California institute for
+societally related technology research.  The participating campuses
+are UC Berkeley, UC Davis, UC Santa Cruz, and UC Modesto.  CITRIS
+represents a new form of interaction between industry, academia, and
+the state.  In one way, its funding model represents pretty much that
+of <a href="/web/20120408015509/http://www.hiit.fi/">HIIT</a>.  The university provides the
+basic operational funding, but the corporations almost all of the
+research.  There seems to be a difference on the role of the state
+though, at least so far.  CITRIS seems to be much more oriented in
+producing results that have more direct relevance to the state than
+HIIT does, and therefore the state is also providing more direct
+funding to CITRIS than what HIIT is getting (not counting the Tekes
+support which is more or less an extension to industry funding).</p>
+
+<h4>Funding</h4>
+
+<p>For the current year, CITRIS operational (administrative) turnover
+is around 2 million dollars, and the research volume about 40 million
+dollars.  CITRIS has industry related two boards, the Technical
+Advisory Board (TAB), which consists of research oriented people from
+the founding members, and the Management Advisory Board (MAB), which
+is more adminstratively oriented.  The Technical Advisory Board meets
+every 6 months, and the Management Advisory Board annually.</p>
+
+<p> The university is planning a new CITRIS II building.  The work is
+scheduled to start in 2003 and be ready in 2005.  The state will be
+paying the building, the corporate members the research inside the
+building.  All the Founding Corporate Members are entitled named
+offices in the building, up to three persons, once it is ready.</P>
+
+<p>The Founding Corporate Members are expected to pay six million
+dollars over four years.  However, only three of the nine FCMs seem to
+be on the speed.  Ericsson's current contributions fall into the
+middle of all FCMs.  
+<a href="/web/20120408015509/http://www-cad.eecs.berkeley.edu/~newton/main/frontpage.html">
+Richard Newton</a>, Dean of
+Engineering, mentioned that it is <em>expected</em> that some
+financieers will tilt their contributions towards the end of the four
+year period due to the current economic situation. </p>
+
+<h4>Scientific Strategy</h4>
+
+<p>The scientific strategy centers around three issues:</p>
+<ul>
+  <li>Societal-Scale Applications that have an impact on the quality
+      of life, e.g., disaster recovery,
+      transportation management, or environmental enginering.</li>
+  <li>New Distributed System Architecture, based on <em>large scale
+      sensing and actuation</em> and fail safe design</li>
+  <li>Applying technology break throughs, such as nanotechnology.
+</ul>
+<p>
+In a way, the purpose is to apply new technology on the societal scale
+applications by developing a new distributed system architecture that
+allows the large scale deployment scenarios.  The system architecture
+binds together distributed information systems, micro sensors and
+actuators and HCI principles.  The work is based on the foundations of
+reliability, availability, security, algorithms, and social &amp;
+policy issues.  The idea is do <em>wide scale</em> prototype
+deployment, using test beds that allow new and innovative applications
+to be easily tested. 
+</p>
+
+<p>CITRIS is expected to make a difference through large scale
+deployment of new IT technologies on societal problems.</p>
+
+<p>The Chief Scientist and Associate Director of CITRIS is
+<a href="/web/20120408015509/http://www.cs.berkeley.edu/~demmel/">James Demmel</a>.</p>
+
+<h4>Mode of operation</h4>
+
+<p>CITRIS works closely with the industrial financiers, encourages
+transfer of people between CITRIS and the financieers.  The
+administration is lean and mean, focusing on providing support for the
+actual projects and the prototype platforms.  The projects are
+independent, but CITRIS coordinates them and encourages co-operation
+where feasible, if I understood correctly.</p>
+
+<p>Each Founding Corporate Member is eligible for membership in the
+Advisory Boards.  Additionally, they will have a possiblity of having
+a named office in the new building once it is build.  CITRIS is also
+prepared to spend a day separately with each member, focusing on the
+research issues that are of interestest to the FCS.  There will be
+possibilities for large scale online participation, such as remote
+Master's programs and other remote education.  Finally, each research
+project is expected to have an annual retreat with indiustry members
+participating. <p>
+
+<h4>Selected research projects</h4>
+
+<p>In the meeting quite a few people presented a largish number of
+research projects.  Most of them have good websites, and therefore I
+mention here just a few that I found myself interesting.  In general,
+the goal in everything are systems that can be trusted (and often must
+be trusted), systems that must be secure, non-stop, often zero
+configuration, contain adaptive user interfaces, and that are always
+connected. </p>
+
+<p>For me, one of the most interesting things were Berkeley MOTEs,
+small autonomic computers that contain sensors and radio units and
+that autonomously form ad hoc networks.  They run <a
+href="/web/20120408015509/http://webs.cs.berkeley.edu/tos/">TinyOS</a>.  The plan is
+to instrument several buildings with these, and to control the HVAC
+(Heating, Ventilation, Air Conditioning) of the buildings with these.</p>
+
+<p class="note">Side note.  According to 
+<a href="/web/20120408015509/http://www.cbe.berkeley.edu/ABOUTUS/staff-edward.htm">Ed Arens,</a> 
+10% of world's energy consumption,
+equaling 1/3 of U.S. energy consumption, goes to the heating and air
+conditioning of U.S. buildings.</p>
+
+<p>The percieved future of the MOTes was outlined by
+<a href="/web/20120408015509/http://sierra.ece.ucdavis.edu/html/html/yoo.html">Ben Yoo</a> 
+(UC Davis) and 
+<a href="/web/20120408015509/http://www-bsac.eecs.berkeley.edu/~howe/">Roger Howe</a>.
+Their goal is to build systems with ultralow communcations power
+requirements, giving 1 Mbps with less than one microwatt.  The
+approach is based on integrating CMOS and MEMS (Micro
+Electro-Mechanical Systems) together, to form reconfigurable signal
+processing systems that consist of both reprogrammable hardware and
+software.  The effort aims to drop total power consumption, eventualy
+allowing the devices to power themselves autonomoysly even indoors,
+e.g. through energy harvesting or indoors solar power. </p>
+
+<p>
+<img alt="Paul Wright"
+     src="/web/20120408015509im_/http://kingkong.me.berkeley.edu/people/assets/Paul.jpg"></p>
+
+<p>
+<a href="/web/20120408015509/http://kingkong.me.berkeley.edu/people/paulpage.html">Paul Wright</a>
+described his
+efforts on distance learning and rapid prototyping.  His has run and
+plans to run classes together with industry partners.  The students
+design new electronic applicances, and they are actually prototyped
+using Berkeley's fast prototyping facilities.  The emphasis is on
+<em>design</em>, i.e. user interface issues and actual physical
+design of the appliances.</p>
+
+<p><a href="/web/20120408015509/http://sahara.cs.berkeley.edu/">Sahara</a> and
+<a href="/web/20120408015509/http://oceanstore.cs.berkeley.edu/">OceanStore</a> are projects led by 
+<a href="/web/20120408015509/http://www.cs.berkeley.edu/~randy/">Randy Kats</a>.  
+They are directly interesting to my
+activities; e.g. trust management and behaviour verification are 
+topics on Sahara.</p>
+
+<p>Hal Varian presented very vividly his efforts on Mining the Web for
+economic data.  Demonstrations can be found at
+<a href="/web/20120408015509/http://fff.cs.berkeley.edu/">fff.cs.berkeley.edu</a>
+and 
+<a href="/web/20120408015509/http://www.sims.berkeley.edu/~hal/footprint/">footprint</a>.
+
+<h3>Down to San Jose</h3>
+
+<p>I was pretty exhausted after the meeting, but I still managed to
+drive to 
+<a href="/web/20120408015509/http://www.hamptoninn.com/">Hampton Inn</a> & Suites San Jose,
+checking on the way whether there was anything worth buying at 
+<a href="/web/20120408015509/http://www.frys.com/">Fry's Electronics</a>
+(there wasn't).  The hotel was nice, I had free high speed Internet
+access in my room, and the pool was almost immediately next to the
+room.  The pool was small, but still an evening and morning swim
+basically directly from your room was really enjoyable.  The only
+downside was that the hotel was outside of the downtown area, in the
+middle of nothing, and it was somewhat hard to find: the address is
+somewhat misleading, driving directions are essential.</p>
+
+<h2>Wednesday June 12th</h2>
+
+<h3 id ="docomo">Visiting DoCoMoLabs USA</h3>
+
+<p>In the morning, James Kempf came to the hotel and we drove for a
+quick breakfast, continuing to DoCoMoLabs 
+<a href="/web/20120408015509/http://www.docomolabs-usa.com/">DoCoMoLabs USA</a>
+office, located close to San Jose airport.  James and I discussed
+mostly issues related to Secure Neighbor Discovery (SeND) BoF, planned
+for Yokohama.  I was also able to synchronize my e-mail using their
+conveniently open outside-of-the-firewall WLAN.</p>
+
+<p>The main part of the visit was 
+<a href="/web/20120408015509/http://www.tml.hut.fi/~pnr/presentations/DoCoMo-hip-slides.pdf">
+my talk</a> 
+about HIP.  I think everybody got a much
+better understanding what HIP is, but it also become clear that I need
+to add a couple of slides about the actual protocol into the
+presentation.</p>
+
+<p>For lunch we went to San Jose Hilton.
+Food was OK but featureless.   Grabbing a mandatory 
+triple cappucino I headed towards 
+<a href="/web/20120408015509/http://www.stanfordbookstore.com/">Stanford University bookstore</a>, 
+spending there a couple of hours reading 
+<a href="/web/20120408015509/http://www.amazon.co.uk/exec/obidos/ASIN/0262640414/pekkanikander">
+The Invisible Computer</a> by
+<a href="/web/20120408015509/http://cogsci.ucsd.edu/~norman/">Don Norman.</a>   
+Great book, highly recommended.
+Chapter 6, "The power of infrastructure", is especially related to
+Ericsson business and all systems and middleware kind of stuff.</p>
+
+<h3 id="berson">Dinner at Tom Berson's</h3>
+
+<p>
+<img alt="Tom Berson"
+     src="/web/20120408015509im_/http://www.anagram.com/berson/tom_berson.jpg"
+     height="150"></p>
+
+<p>I had the pleasure of having a dinner at 
+<a href="/web/20120408015509/http://www.anagram.com/berson/">Tom Berson</a>'s place. 
+Tom showed me his ham gear, and we talked a little bit about
+trust, universe, and everything.  Dorothy's mixed green salad was just
+excellent, and I learned how to eat baby artichokes.  </p>
+
+<p>Afterwards my drive south to Monterey was almost an adventure.  I
+took a couple of detours due to sleep deprivation and lacking maps,
+but finally arrived at 
+<a href="/web/20120408015509/http://www.marriott.com/epp/default.asp?MarshaCode=MRYCA">Monterey Marriot</a>
+at 10:30pm.</p>
+
+<h2>Thursday June 13th</h2>
+
+<h3 id="name">Lawrence Lessig</h3>
+
+<p>
+<img alt="Larry Lessig"
+     src="/web/20120408015509im_/http://cyberlaw.stanford.edu/lessig/contact/pictures/lessig_pillar_small.jpg"></p>
+
+<p>The 
+<a href="/web/20120408015509/http://www.usenix.org/publications/library/proceedings/usenix02/">
+Usenix Conference</a>
+was opened with a keynote by
+<a href="/web/20120408015509/http://cyberlaw.stanford.edu/lessig/">Lawrence Lessig</a>.
+I had never before had a chance to listen to him, and it was a joy.
+He is an exceptionally good speaker.</p>
+
+<p>The speach itself did not contain any real surprices or new
+insights, as far as I remember.  But that's only because I had already
+read so many of his writings.  His basic message came out loud and
+clearly: We techies can't ignore the copyright wars that are going on.
+Basically, he drew a high number of parallels between earlier cases
+where the copyright law was challenged or extended, like when the
+congress set up a mandatory licensing scheme for cable TV companies,
+(the broadcasting companies were forced to license their content to
+the cable TV operators, at a price determined by the goverment), 
+the fights when the VCRs were brought to the market, etc. </p>
+
+<p>I do not want to repeat all his argumentation here.  If you are not
+familar with it, you can check 
+<a href="/web/20120408015509/http://cyberlaw.stanford.edu/lessig/">his website</a>.
+
+<h3>The rest of the day</h3>
+
+<p>I was pretty tired, and so the only talk that I listened to was about
+<a href="/web/20120408015509/http://www4.informatik.uni-erlangen.de/Projects/JX/">JX operating system,</a> 
+and only the send half of thet
+presentation.  JX is an i386 operating system written almost
+completely in Java, and supporting only Java runtime.  The talk wasn't
+that good, and the would have benefitted from some improvements.
+However, I found the talk quite fascinating from a long term
+development point-of-view.  The fact that one can build microkernels
+using an object-oriented programming language is a fascinating one.</p>
+
+<p>I had lunch at Fisherman's Warf, eating
+<a href="/web/20120408015509/http://www.kitchenproject.com/html/The_Clam_Chowder_Page.html">
+clam chowder in a sour dough bread</a>, which seems to be local
+tourist attaction stuff.  It was OK, but nothing especial.</p>
+
+<p>I was very tired all the day.  Thus, I went to my hotel room at 4pm
+to take a nap, and woke up the next time at 5am next morning.</p>
+
+<h2>Friday June 14th</h2>
+
+<p>I was hungry as a wulf when I finally got to breakfast by 7am.  Thus,
+I ate a ton of bacon, sausages, a pouched egg, fruit, etc.</p>
+
+<h3>My presentation</h3>
+
+<p>
+<a href="/web/20120408015509/http://www.tml.hut.fi/~pnr/presentations/Freenix2002-slides.pdf">
+My presentation</a> was in the middle of the first Freenix session.
+While in the 
+<a href="/web/20120408015509/http://www.tml.hut.fi/~pnr/publications/Freenix2002-Nikander.pdf">
+paper</a>
+I write mostly about the technical details of our
+<a href="/web/20120408015509/http://www.tml.hut.fi/~pnr/EAPOL/">802.1x implementation</a>,
+in the talk I covered more the background and some lesson's learned.
+The talk wasn't any specific success, I could have made much better.
+Shees, maybe I am getting lazy.</p>
+
+<p>Skipped lunch; I wasnt' hungry fater the large breakfast I had
+had.</p>
+
+<h3 id="honey">People, people, people</h3>
+
+<p>
+Friday was my day for meeting people.  First
+<a href="/web/20120408015509/http://www.citi.umich.edu/u/honey/">Peter Honeyman</a> 
+dug me up.  He is a really nice guy,
+and for some strange reason interested about what I am doing.  Right
+now he wants to implement a single sign on system that uses a cell
+phone and Bluetooth as the primary technologies.  Extremely cool.
+IMHO, we should really put some cycles on this, and make sure he
+can fulfil his vision.  Besides, I would like to use that system,
+too!
+</p>
+
+<p>Next I bumped to 
+<a href="/web/20120408015509/http://www.hillside.co.uk/pcsig.html">Peter Collinson.</a>  
+I think I had met him last in 1986
+or so in an EUUG workshop at Nice, but maybe later.  He is still
+working as freelance consultance, mostly running websites with his own
+software.  Among other things, he manages the Usenix website.
+</p>
+
+<p id="hagen">
+<a href="/web/20120408015509/http://www.isc.org/ISC/hagen.html">Teus Hagen</a> is also one of the old
+farts from EUUG days.  He and his pals used to run the Neatherlands
+part of the EUUG network, EUnet, sold it to Worldcom, and founded 
+the 
+<a href="/web/20120408015509/http://www.nlnet.nl/">Stifting NLnet</a>
+foundation with the money they got.  The foundation's goal is to fund
+open source projects.</p>
+
+<p>I told Teus about HIIT's open source search engine idea, and he
+found it interesting.  Thus, I'll try to put together Martti and him,
+and see if something comes out of that.  It might also be a good idea
+to seek funding for our HIP work, maybe for Janne Lundberg.</p>
+
+<p id="pike">Peter Honeyman also introduced me to
+<a href="/web/20120408015509/http://www.cs.bell-labs.com/who/rob/">Rob Pike</a>, 
+one of the real Unix guru's from AT&amp;T
+Bell Labs.  Rob is a really nice guy.  For example, realizing that I
+am a Finn, he vent to utter "hyvää päivää" (good afternoon) and "yksi,
+kaksi, kolme, neljä, viisi, kuusi"  (one, two, ..., six).  He had been
+to Finland in 1987 at the EUUG boat conference, I guess, or in the
+late 1980's anyway.</p>
+
+<h4 id="venti">Venti</h4>
+
+<p>One of the things we talked with Rob was 
+<a href="/web/20120408015509/http://www.usenix.org/publications/library/proceedings/fast02/quinlan.html">
+Venti</a>, a distributed block storage system.  Very cool stuff.  The
+basic idea of Venti is that you store blocks (not files) of arbitrary
+sizes.  When you store a block in venti, it returns a SHA1 hash of the
+block.  This hash functions as a handle to the block.  That is, you
+give the system a hash, and it replies with the block.</p>
+
+<p>Blocks are never erased in Venti.  If the same block is stored
+again, the data is not stored again but the same block is reused.  In
+this way replication and version management is very easy.</p>
+
+<p>The only real trick lies in designing the blocking boundaries.  For
+example, if you store digital video for editing, i.e. in an
+uncompressed or very lightly compressed format, you may want to store
+each image as a separate block.  Sequences of images would be stored
+by putting the hashes of the individual blocks in a block, and storing
+that block.  Breaking the sequences at suitable boundaries,
+e.g. whenever there is a cut, would allow reuse of sequences, as
+well.  In that way the actual image data would never need to be
+copied, and most of the natural sequencing could be reused as well.
+Implementing Venti for Mac OS X looks like a pretty nice project...
+</p>
+ 
+<h3>WIPs</h3>
+
+<p>
+<a href="/web/20120408015509/http://gunpowder.stanford.edu/~mgbaker/">Mary Baker</a> hosted the
+Work-in-Progress (WIP) session.  Apparently I was in a wrong
+conference since I didn't find almost any of the WIPs interesting
+enough to mention.  The most interesting one was yet another talk
+about network security.  In the conference WLAN, there had been the
+usual amount of clear text passwords, open Windows shares, port
+scanning, windows exloits, attempts to use scanned passwords on SSH
+connections, etc. 
+</p>
+
+<p>After the session I went saying Hello to Mary Baker, but didn't
+want to bother her more since I knew she was busy with her family.</p>
+
+<h3>Dinner with Angelos Keromytis</h3>
+
+<p>
+<img alt="Rappa's Seafood Restaurant"
+     src="/web/20120408015509im_/http://www.rappas.com/webart/pic_index.jpg"
+     width="200"></p>
+
+<p>
+<a href="/web/20120408015509/http://www.cis.upenn.edu/~angelos/">Angelos Keromytis</a>
+and I went to 
+<a href="/web/20120408015509/http://www.rappas.com/">Rappa's Seafood Restaurant</a>
+for dinner. 
+I had their seafood combination platter.  It was OK, but again nothing
+exception.  Bad trip from the food point of view -- no good food, only 
+average. </p>
+
+<p>Basically, Angelos and I decided to write together a paper to next 
+<a href="/web/20120408015509/http://www.di.ens.fr/FC03/cfp.html">Financial Cryptography</a> 
+conference, to be held in 
+<a href="/web/20120408015509/http://www.cieux.com/gdlp.html">Guadeloupe.</a>
+
+<h3>Reception at Monterey Aquarium</h3>
+
+<p>After the dinner I went for a short walk, trying to walk to the
+<a href="/web/20120408015509/http://www.montereybayaquarium.org/">Monterey Aquarium</a>
+over the hill, but failed.  That is, I needed to
+came back to the shore line and the the walkway there. </p>
+
+<p>The aquarium is just great.  This time they had unsually large
+jelly fish exhibit, and I enjoyed it greatly.  It was also interesting
+to learn that there is actually a very large underwater canyon,
+starting almost immediately outside Monterey.  The exhibits also
+displayed a number of deep sea species.</p>
+
+<h2>Saturday June 15th</h2>
+
+<p>I tried to start the morning by following refereed track talks.
+Somewhat interesting, but not really worth mentioning, IMHO.
+Go to the 
+<a href="/web/20120408015509/http://www.usenix.org/publications/library/proceedings/usenix02/tech/techonefile.html">
+proceedings</a> 
+if you are interested in
+geographical mapping of routers, proximity of web clients and their
+closest DNS servers, etc.</p>
+
+<h3>Bill Cheswick</h3>
+
+<p>Since the refereed track stuff was not that great, I went to a guru
+session to listen to
+<a href="/web/20120408015509/http://cm.bell-labs.com/who/ches/">Bill Cheswick</a>.
+Entertaining and fun, but I was at least vaguely aware of most of the
+stuff.  He is clearly more paranoid than I am, and relies more on old
+and simple software than I do, but maybe he has more to lose if
+someone hacks to his systems than I do.</p>
+
+<p>At the end of the session he was asked to tell a story.  It went
+like this.  Bill was giving an invited talk in San Jose two years ago.
+He checked out his laptop for the presentation in good time, some 20
+minutes before the talk was due.  However, he needed to do some
+business in the bathroom, ventured to a quiet area in the hotel, and
+found a bathroom.  He did his business, and came out from the stall.
+To his horror he found that the door was locked.  He banged on the
+door, but no-one came to help.  Fortunately he had some tools in his
+backback, so out he took them and managed to pick the lock.  With sigh
+of relieve he opened the door, and indinigtly stepped into the
+janitor's room, only to notice that there was a door without any lock
+right on his back.   The moral of the story: Make sure you are solving
+the right problem.</p>
+
+<h3 id="schneier">Bruce Schneier</h3>
+
+<p>After the break I went to follow 
+<a href="/web/20120408015509/http://www.counterpane.com/schneier.html">Bruce Schneier</a>'s
+<a href="/web/20120408015509/http://www.counterpane.com/presentation4.pdf">
+invited talk.</a> His slides are excellent, check them.  The main
+moral is that security is a part of the net, and the limits of
+security become the limits of the net.  If you can't do it securely,
+you are going to stop doing it.  To make the net a secure place, we
+need liability.  That may cause problems for free software or small
+startups, but not necessarily.  He also talked about the role of
+insurancde industry in the process.  In his view, in the future
+security can be viewed as a city.  We need a dynamic, very context
+sensitive definition of security that we revise all the time in our
+real life.</p>
+
+<p>The discussion that ensued after the talk was quite interesting.
+In the following I've tried to distill some essential insights.
+Firstly, the issue of liability is really a question of a delicate
+interplay between government law and insurance companies.  Law is
+never perfect.  Matt Blaze has once said that Computer Science is a
+search for the truth, lAw is a search for the concensus.  Bruce noted
+that in the current situation big companies are basically buying laws
+for themselves.  There is no magical technological fix for that; we
+need a whole new legal infrastructure.</p>
+
+<p>Niels Provost (Peter Honeyman's student) asked Bruce to clarify his
+claims about the affordability of security, and whether uniform (and
+therefore inexpensive) tools form a risk, leading to a situation where
+only the rich can afford real security.  Bruce answered that in our
+real life non-digital society, everybody <em>can</em> afford basic
+security.  Since we live in lawful society, the average person doesn't
+need walls and guards in their house.  He acknowledged that systems of
+diverse types will be more survivable and more secure.  However, we
+already now have just a few security products, not even hundreds or
+millions.  For example, there are only three wide spread firewall
+products in the market.  If there were more products, then
+heterogneity would really matter, but not in the current situation.
+
+<p>In many of his answers, Bruce emphasized that all solutions are
+imperfect.  Legistlation is a random walk towards convergence.  There
+will be spectacular failures.  It takes time before we really
+understand the time and space shifting abilities of the technology.
+Furthermore, there will always be domains in the planet that do not
+fall into these legistlations.  Maybe there will be good and bad
+countries, and a wall in between.  Or maybe we can deal the situation
+in a way similar to how we deal with uninsured motorists.</p>
+
+<p>One interesting idea that came up would be a mandatory individual
+liability insurance, that woudl come with your computer or ISP connection.
+Like mandatory traffic liability insurance.  That might fit into the
+U.S. system, but I am personally sceptical about the European case.</p>
+
+<p>In the end, Matt Blaze asked whether Bruce has any
+<em>advice</em> for the rest of us.  He replied that liability is
+coming, sooner or later.  The security problems will be solved through
+the legal framework.  So, we should think how this interplay will
+affect us, whether we write free software or deal with standards.  We
+don't have that lot of lobbying dollars.  This is happening whether we
+like or not.  We need to understand it and get ahead it.
+</p>
+
+<h3>Technical sessions</h3>
+
+<p>
+In the afternoon technical session there was one interesting paper, 
+<strong><a href="/web/20120408015509/http://www.usenix.org/publications/library/proceedings/usenix02/savarese.html">
+Robust Position Algorithms for Distributed Ad-hoc Networks</a></strong>
+
+by Chris Savarese from
+<a href="/web/20120408015509/http://bwrc.eecs.berkeley.edu/">Berkeley Wireless Research Center (BWRC).</a>
+His work is related to the 
+<a href="/web/20120408015509/http://bwrc.eecs.berkeley.edu/Research/Pico_Radio/Default.htm">
+Picoradio project</a>
+going on at BWRC.  In their vision, there is an ad hoc radio network
+of very small nodes, all nodes being equal other than some very few
+nodes (anchor nodes) know their location e.g. by GPS.  Everything is
+distributed.<p>
+
+<p>
+The problem in hand is estimating the geographical location of the
+nodes, using information about the locations of the anchor points.
+However, usually the radio range of the nodes is so small that they
+can't hear enough anchor points, often not even one.  Thus, the nodes
+need to first estimate their location based on hop counts, and then
+revise the estimates based on estimates.  A confidence factor comes to
+play as well, to detect bad nodes.  However, that approach seemed to
+be collaborative and not able to guard against intentionally malicious
+nodes.</p>
+
+<p>One of the intesting results was that if you range errors are very
+high, perhaps larger than 40%, refinement (as used) does not seem to
+help, but hop count seems to be relatively immune towards range
+estimate errors.</p>
+
+<h3>Special Closing Session</h3>
+
+<p>In the Usenix tradition, the last session is always something
+special.  This time professor
+<a href="/web/20120408015509/http://ib.berkeley.edu/faculty/dickinsonm.html">Michael H. Dickinson</a> 
+from UC Berkeley 
+presented his research on <strong>How flies fly</strong>.
+Fascinating, given the very small number of neurons involved.  Only
+through this kind of research one is able to understand how complex
+systems the evolution is really able to produce, and how the
+interconnections within such a system may look like almost wild 
+and arbitrary, but they do work in a very efficient way.</p>
+
+<p>After the talk, I was able to drive safely back to SFO, and got on
+my plan in time.  This report was written mostly during the
+transatlantic flight.</p>
+
+<h2>Sunday June 16th</h2>
+
+<p>
+For me, Sunday June 16th did not really exist.  That is, I sat on the
+plane, wrote this travel report, and worked on a paper for the
+forthcoming workshop on Trust Management and related issues.
+
+<div class="footer">
+  <p class="validator">
+    <a href="/web/20120408015509/http://validator.w3.org/check?uri=referer">
+      <img src="/web/20120408015509im_/http://www.w3.org/Icons/valid-html401-blue.png"
+           alt="Valid HTML 4.01 Strict" 
+           height="31" width="88">
+    </a>
+  </p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:55:09 Apr 8, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:15:57 May 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

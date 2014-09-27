@@ -19,7 +19,6 @@ feel free to send e-mail to me, and I'll add the material to the
 website and mail back to you.  I usually respond to e-mail within a
 day or two.
 
-
 ## A failed attempt to create a blog
 
 <ul class="posts">
@@ -61,38 +60,37 @@ day or two.
 
 [Full publication list](publications.html)
 
-[Some presentations](http://koti.welho.com/pnikande/presentations/)
+[Some presentations](presentations)
 
 ## Past projects
 
 * [PURSUIT](http://www.fp7-pursuit.eu/PursuitWeb/) (2010-2011)
 * [Publish-Subscribe Internet Routing Paradigm](http://www.psirp.org/)
   (2008-2010)
-* [Host Identity Protocol](http://koti.welho.com/pnikande/HIP) (2000-2006)
-* [Bound End-to-end Tunnel](http://koti.welho.com/pnikande/BEET/) (2003)
-* [SEcuring Neighbor Discovery](http://koti.welho.com/pnikande/SEND/)
+* [Host Identity Protocol](HIP.html) (2000-2006)
+* [Bound End-to-end Tunnel](BEET.html) (2003)
+* [SEcuring Neighbor Discovery](SEND)
   (2002-2004)
-* [IEEE 802.1x for FreeBSD](http://koti.welho.com/pnikande/eapol/) (2001-2003)
-* [Mobile and Multihomed Hosts](http://koti.welho.com/pnikande/homeless/) (2001)
+* [IEEE 802.1x for FreeBSD](eapol.html) (2001-2003)
+* [Mobile and Multihomed Hosts](homeless) (2001)
 * iPoints (2001)
 * [FrameMaker templates]() (1992-2001 or so)
-* [Java for lego RCX](http://koti.welho.com/pnikande/rcx/) (2000)
-* [Java Conduits Beans
-  Framework](http://koti.welho.com/pnikande/jacob/) (1999-2000)
+* [Java for lego RCX](rcx) (2000)
+* [Java Conduits Beans Framework](jacob) (1999-2000)
 * [TeSSA](http://www.tml.hut.fi/Research/TeSSA/) (1998-2001)
 * [Gang-of-Four Design patterns as UML
-  models](http://koti.welho.com/pnikande/GoF-models/html/) (1998)
+  models](GoF-models/html/) (1998)
 * Using formal methods to reason about cryptographic protocols (1994-1997)
 
 ## Misc historical
 
-* [On Future Internet Architectures: Rethinking Naming, Trust, and Primitives](http://koti.welho.com/pnikande/FIND-white-paper.pdf)
-* [Personal contributions to the IAB thinking](http://koti.welho.com/pnikande/IAB/)
-* [Generic Proxying as a Deployment Tool](http://koti.welho.com/pnikande/draft-nikander-arch-generic-proxying-00.txt)
-* [Why Complexity is like Body Fat](http://koti.welho.com/pnikande/FAT/index.html)
-* [IETF-63 ALIEN BoF minutes](http://koti.welho.com/pnikande/ietf63_alien_minutes.html)
-* [NDSS 2003: Conference report](http://koti.welho.com/pnikande/ndss2003-report.html)
-* [Usenix 2002 ATC report](http://koti.welho.com/pnikande/usenix2002-report.html)
+* [On Future Internet Architectures: Rethinking Naming, Trust, and Primitives](FIND-white-paper.pdf)
+* [Personal contributions to the IAB thinking](IAB/)
+* [Generic Proxying as a Deployment Tool](draft-nikander-arch-generic-proxying-00.txt)
+* [Why Complexity is like Body Fat](FAT/index.html)
+* [IETF-63 ALIEN BoF minutes](ietf63_alien_minutes.html)
+* [NDSS 2003: Conference report](ndss2003-report.html)
+* [Usenix 2002 ATC report](usenix2002-report.html)
 
 
 

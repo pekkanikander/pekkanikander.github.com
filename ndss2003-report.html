@@ -1,0 +1,1285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<title>
+2003 Network and Distributed Systems Security Symposium -- 
+as seen by Pekka Nikander
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: sans-serif ;
+  }
+  p.speaker { font-size: -2 }
+  h1 { margin-left: -8%; }
+  h2,h3,h4,h5,h6 { margin-left: -3%; })
+</style>
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app12.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/koti.welho.com\/pnikande\/ndss2003-report.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "6";
+var displayMonth = "Apr";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://koti.welho.com/pnikande/ndss2003-report.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20120406202951" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Mar
+                       
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 20:29:51 Apr 6, 2012">APR</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       May
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+                       
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 20:29:51 Apr 6, 2012">6</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 20:29:51 Apr 6, 2012">2012</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2013
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20120406202951*/http://koti.welho.com/pnikande/ndss2003-report.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>1 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">6 Apr 12 - 6 Apr 12</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:3:000100000000_2013:-1:000000000000_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<h1>NDSS 2003: Conference report</h1>
+
+<p><a href="/web/20120406202951/http://www.tml.hut.fi/~pnr">
+<em>Pekka Nikander</em></a>
+<img alt="Pekka Nikander" 
+     src="/web/20120406202951im_/http://koti.welho.com/pnikande/pnr-smaller.gif">
+</p>
+
+<p class="note">This is a <em>personal</em> report from my trip to San Diego
+for the NDSS conferece.  This time this document describes mostly 
+technical and research related material, since the food was worse than
+average, there were no wines worth to mention, and I didn't have much
+change to talk with interesting people.</p>
+
+<h2>Executive summary
+</h2>
+
+<p><a href="/web/20120406202951/http://www.isoc.org/">ISOC</a> 2003 Symposium on
+<a href="/web/20120406202951/http://www.isoc.org/ndss2003/">Network and Distributed
+System Security</a> was held at
+<a href="/web/20120406202951/http://www.catamaranresort.com/">Catamaran Resort Hotel</a>
+in 
+<a href="/web/20120406202951/http://www.isoc.org/isoc/conferences/ndss/03/sandiego.shtml">
+San Diego</a>, just like it has been held
+several times earlier.  The actual conference took place 
+on February 6-7, with tutorials held on the previous day.
+</p>
+
+<p>The conference program was quite interesting in the average, but
+also diversed both in topics and quality.  From LMF / NomadicLab / my
+own personal point of view, the most interesting issues included the
+following:</p>
+<ul>
+  <li>John "JI" Ionnadis gave a <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#ipsec">keynote on IPsec</a>,
+      touching issues such as IPsec usability, distributed firewalls,
+      and how IPsec SPD design is able support symbolic names and
+      dynamic binding.</li>
+  <li>There were a couple of talks describing how to use
+      hash chains based authentication for 
+      <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#esmrp">routing protocols</a> and
+      <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#sensenet">sensor networks</a>.</li>
+  <li>There was a <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#privpanel">panel</a> on authentication and
+      privacy.  From my point of view, perhaps the most interesting
+      issue was <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#terminology">terminology</a>, or lessions
+      to learn how to define identity, and consequently, identity
+      authentication. </li>
+  <li>Tools for detecting buffer overflows and other common
+      programming errors. (several talks)</li>
+  <li>Fighting against spam with 
+      <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#spas">SPAs</a> and <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#mbf">memory bound functions</a>.</li>
+</ul>
+
+<p>Furthermore, it was very interesting to note that within this
+community Mac OS X is really taking off.  Based on casual observation,
+about one third of the laptops were Apples, mostly PowerBooks but also
+some iBooks.  Many of the interesting people seemed to have switched
+over to Mac OS X,, including Avi Rubin, Alper Yegin, and Steve Kent.
+So, I am in good company with my new PowerBook G4 DVD-R. :-)</p>
+
+<h1>Thursday, Feb 6th</h1>
+
+<p>
+After having arrived on Wednesday evening, after 21 hours of
+travelling, and somehow surviving the welcome reception, I woke up at
+3:30am after some seven hours of sleep.  Feeling much better than the
+night before I was able to finalize my slide and process e-mail before
+it started to dawn.  Walking along the shore of Mission Bay at the
+time the sun was rising was lovely, but it was also very cold for
+California, almost freezing.  However, after a couple of Tai Chi 24s I
+was fresh and ready for the day.</p>
+
+<h2>Welcome</h2>
+<p class="speaker">Clifford Neumann</p>
+
+<p>Clifford started by briefly describing the history NDSS.  NDSS was
+started in 1993, initially as an independent workshop.  It has always
+been intended to be a fairly small conference, to promote interaction
+between speakers and the audience.  The focus is on actual system
+design and implementation, not theory.  </p>
+
+<p>In 1994 NDSS joined forces with Internet Societ. The conferences
+grew quite large for a couple of years, but they are againsmaller now.
+This year there was135 attendees.  The tutorial day added in 1998,
+tutorials have been available ever since, and an outstanding paper
+award has been given out since 2000.</p>
+
+<p>The National Security Agency (NSA) is the largest sponsor for NDSS,
+and has always been.  </p>
+
+<p>Clifford handed over the podium to Virgil Gligor, progam co-chair,
+who thanked the program committee.  This year there were 82 papers
+submitted, 17 of which were accepted, by authors from Finland, France,
+Sweden, and U.S.  The number of accepted papers has always been and
+will keep on the level of 17-19 papers, due to the structure of the
+conference.  Thus, given the ratio of accepted papers, NDSS is getting
+to the same level with the Oakland and ACM CCS conferences.  </p>
+
+<h2>Session 1: Invited Speaker</h2>
+
+<p>The invited speach was planned to be <em>Total Information
+Awareness (TIA)</em>, by Dr. Robert L. Popp from DARPA, but that was
+cancelled on very short notice (previous day) since he seems to be
+very busy at the Capitol hill.  Thus, we had the opportunity to enjoy
+JI instead.</p>
+
+<h3 id="ipsec"><a href="/web/20120406202951/http://www.tla.org/talks/ipsec-dammit.pdf">
+Why Don't we Still Have IPsec, dammit</a></h3>
+<p class="speaker"><a href="/web/20120406202951/http://www.tla.org/">
+John "JI" Ionnadis</a>
+</p>
+
+<p>JI described his talk as six talks in one, since most of the same
+could be said for IPv6, Mobile IP, PKIs, secure e-mail, and DNSSEC.
+In general, it is easy to blame people, vendors (or a particular
+vendor...), and the users.  Basically, it is a question of the network
+effect, in the sense that all of these are kinds of technology which
+are only useful if there are other people that have them, too.  These
+just just like Like fax or telephone; a single telephone by itself is
+completely useless.</p>
+
+<p>JI continued his rant by noting that people who really know IPsec
+can write it right, not IPSEC, IPSec, or Ipsec.  He also blamed
+Microsoft Word, since it is almost impossible to spell IPsec correctly
+with it.</p>
+
+<p>Going to the real subject, IPsec is still missing configuration
+languages, GUIs, management software, etc.  In a word, it is lacking
+<em>ease of deployment</em>.  It is still hard to configure IPsec for
+use; even JI usually turns to Angelos when he wants to configure IPsec
+for something, prefering to use SSH for his own needs.</p>
+
+<p>Perhaps one of the problems with IPsec is that it is too modular
+and too secure; the modularity and security goals may also have slowed
+down the standardization too much.  The IPsec design decouples key
+management, policy, and on the wire security protocols.  Making the
+first versions of the standards took from 1992 to 1997, so roughly 4-5
+years.  In the meanwhile, SSL (1995) happened, and SSH started to catch
+on, firewalls started to get more sophisticated, NAT spread, and
+layer-4 redirectors happened.  Thus, the need for IPsec diminished
+and its operating environment changed.</p>
+
+<p>Why then SSL and SSH spread while IPsec didn't?  SSL and SSH do not
+need to be configured, at least not be the end user.  Whether the SSL
+connections are really secure and does thatt matter, is a topic of a
+separate talk.  SSL is there, dammit. </p>
+
+<p>So why don't we have IPsec, part I?  The standardization took so
+long that in the meanwhile SSL removed the urgency, as did SSH.  The
+existing IPsec implementations were created by kernel hackers, and
+they did not care too much about the users.  Most IPsec
+implementations today have disgusting command line interfaces for key
+management.</p>
+
+<p>IPsec is currently everywhere and nowhere.  All major operating
+systems have it, even embedded systems, routers, broadband modems, VPN
+access software, etc.  But nobody really uses it because it is too
+bloody hard to configure.  It <em>is</em> being used for VPN and some
+remote/rowad warrior access, and it may come up on 3GPP phones, but it
+is not in for general use.</p>
+
+<p>From the management point of view, there are no standard APIs for
+application to ask the network stack about security.  The existing
+APIs that there are, getsockopt/setsockopt and PF_KEY, have different
+semantics on different operating systems.  There is no real way of
+defining policy at a high level.  The IETF IPSP WG is not doing much
+progress.</p>
+
+<p>So why, part II?  IKE is too complex.  JI is know for distributing
+his "I dislike IKE" buttons.  IKE is a real pain to configure; I have
+some personal experience on this, too. It really is a royal pain, not
+just in JI's but also in my opinion.  </p>
+
+<p>So why, part III?  Even though IPsec is being used by businesses,
+integrating legacy systems with it is fairly hard.  Peer-to-peer IPsec
+is not really useful without real PKIs.  Currently it is really hard
+to set up app-to-app secure communications.  Application writers don't
+know about IPsec, or they don't know they can use it, even on
+Windows.</p>
+
+<p>IPsec still counts for less than 1% of the Internet traffic.</p>
+
+<p>What need to be done?  Firstly, remote access should be made
+easier.  There is a great need for standardized, useful APIs.  We need
+better configuration and management tools.  We need to make IPsec to
+work nicer with the other tunneling protocols.  And finally, we need
+to fix the implementations so that IPsec integrates better with host
+routing within the hosts.</p>
+
+<p>Furthermore, we have to prepare for the future needs. If IPsec
+indeed happens, firewalls need to be redifined as policy enforcement
+points.  When IPsec is used, "inside" and "outside" become defined by
+keys, not by network topology. </p>
+
+<p>Steven Bellovin's 
+<a href="/web/20120406202951/http://www.research.att.com/~smb/papers/distfw.html">
+Distributed Firewalls</a> paper, in the November 1999 issue of
+<a href="/web/20120406202951/http://www.usenix.org/publications/login/">;login:</a>, 
+described the basic ideas
+in distributing the firewall into the hosts.  There also appears
+to be a <a href="/web/20120406202951/http://www.distributedfirewalls.com/">dedicated
+website</a> for spreading information about distributed firewalls.</p>
+
+<p>In the discussion afterwards, Steve Kent noted that the SPD
+<em>design</em> allows one to have symbolic identifiers in the SPDE,
+so that the identifiers can the can be dynamically mapped to IP
+addresses.  Thus, in theory, IPsec SPD would be able to support
+mobility better than it does today, but people have not implented
+that.  This may be something that we have to have a look at.</p>
+
+<h2>Session 2: Mobility and Secure Routing</h2>
+
+<p>
+The first paper session was chaired by 
+<a href="/web/20120406202951/http://www.cs.umd.edu/~waa/">Bill Arbaugh</a>,
+and focused on secure routing and mobility.  Thus, it appeared that
+our paper was the only paper about secure mobility and that our paper
+was clumbed together with two routing security papers.</p>
+
+<h3 id="esmrp">Efficient Security Mechanisms for Routing Protocols</h3>
+
+<p class="speaker"><a href="/web/20120406202951/http://www-2.cs.cmu.edu/~yihchun/">
+Yih-Chun Hu</a></p> 
+
+<p>The first paper in the conference focused on efficient security for
+routing protocols.  The goal of the work was to make it possible to
+verify routing packets at or near wire speed, using hash chains
+instead of signatures.  In general, the talk was very interesting, and
+the paper is most probably very worth reading.  (I haven't read it
+yet, though.)</p>  
+
+<p>The paper is available in 
+<a href="/web/20120406202951/http://www.monarch.cs.rice.edu/monarch-papers/ndss03.pdf">
+electronic form</a>.  
+Related to the paper, 
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/home.html">
+Adrian Perrig</a>'s 
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/projects.html">
+projects web page</a> 
+contains more information about the project.</p>
+
+<p>The speaker started with describing distance vector routing
+protocols.  In a distance vector protocol, a router basically
+distributes its hop-count based routing tables periodically.  Sequence
+numbers are used to make difference between older and newer versions
+of the distributed routing info. </p>
+
+<p>Most of the distance vector routing related work was already
+presented in a 
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/projects/secure-routing/wmcsa02.pdf">
+companion paper</a>, called <em>SEAD</em>,
+where the authors introduced the idea of using
+long hash chains to secure information in routing messages.  In the
+original approach, they used a few consequtive hash values for
+representing a single sequence number.  Within such a group, the
+different hash values were used to represent different metrics, so
+that an earlier hash within the group in the chain represents a better
+route.  Furthermore, larger sequence numbers were represented by earlier
+hashes in a sequence.  Thus, when a new sequence number was taken into
+use, all the routes using old sequence numbers started to look much
+worse, thereby becoming obsolete.</p>
+
+<p>However, there remained a number problem in this scheme.  The first
+problem was called the <em>same metric problem</em>.  In a distance
+vector protocol, the routers increment the distances as they forward
+messages received from other hosts.  In SEAD, the hosts are assumed to
+increment the distances by hashing once more the received hash values,
+thereby creating hash values that represent larger distances.  Now, in
+a same metric attack an attacking router just replays the metric
+instead of incrementing it.</p>
+
+<p>As a solution to same metric problem, the authors introduced
+<em>Hash Tree Chains</em>.  In a hash tree chian, they used a
+converging hash tree for each sequence number, using separate hash
+nodes in the hash tree for separate forwarding nodes.  This allows the
+receiver to associate the metrics with specific nodes for which they
+were created for, thereby noticing missing increments.</p>
+
+<p>Accornding to the speaker, the used scheme is similar to
+<a href="/web/20120406202951/http://eprint.iacr.org/2002/014/">HORS signature scheme</a>; 
+this is probably something
+the we should check later on.</p>
+
+<p>There is also a possibilityof a DoS attack.  In this attack a
+router simply claims a very sequence number whose checking requires
+the recipients to follow very long hash chains.  To alleviate this,
+the authors introduced <em>skiplists</em>.  Basically, a skiplist is a
+hash structure that allows one to "skip" fast forward within a hash
+chain.  Thus, it is not a linear hash chain, but one that contains
+"skips" over spans of hashes, allowing faster checking of large
+chains.  To implement skiplists, the authors used 
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/projects/secure-routing/ariadne/node31.html">
+Merkle-Winternitz</a> signatures.  </p>
+
+<p>After describing their work on distance vector protocols, the
+author continued with <em>path vector</em> routing protocols.
+In a path vector protocol, the routing messages carry the names of the
+nodes on a path instead of just a hop count.  </p>
+
+<p>There are two basic attacks against path vector protocols:</p>
+<ul>
+  <li>Alternation or removal of nodes on a path</li>
+  <li>Masquerading as another node</li>
+</ul>
+<p>
+The basic approach to secure against path alteration was again already
+presented in
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/projects/secure-routing/ariadne.pdf">
+another paper</a>,
+describing the <em>Ariadne</em> approach by the authors.
+The authors now improved the Ariadne approach with cumulative
+authentication that requires only a <em>constant</em> space overhead
+independent of the path length.</p>
+
+<p>The details of the approaches are in the paper.  In general, I
+think that this was one of the most interesting talks in the
+conference.</p>
+
+<h3>Working around BGP: An Incremental Approach ...</h3>
+<p class="speaker">Geoffrey Goodell</p>
+
+<p>The second talk considered BPG security.  A large part of the talk
+described BGP in general, how it hides some information, and why that
+information needs to be unhidden so that one can perform source
+verification and policy checking.  As we konw, bgp misconfiruation is
+a common problem; having more information available maybe helps in
+better determining the sources of the misconfugred information. </p>
+
+<p>The speaker continued by noting that S-BGP (Secure BGP by Steve
+Kent and others) has different goals than the present approach.
+According to their classification, S-BGP aims for synchronous
+authentication while the present approach, Interdomaoin Routing
+Validation (IRV) provides asynchronous authentication. </p>
+
+<p>The rest of the talk described the IRV system.  It is basically a
+centralized, per AS repository of BGP data, Implemented in XML. 
+The IRV repositories exchange data with each other, if I understood
+correctly.  Whenever routers receive routing updates, they consult
+their local IRV repository to verify that the updates match with the
+currently known configuration.</p>
+
+<p>In my personal opinion, the approach was not very interesting.  It
+seemd to be very complex, at least in implementation, and some of the
+questions afterwards also questioned its security.</p>
+
+<h3>Integrating Security, Mobility and Multi-Homing in a HIP Way</h3>
+<p class="speaker">Pekka Nikander</p>
+
+<p>The third talk in the morning session was my talk.  In general, I
+think the talk went well, and there were a few clarifying questions
+afterwards.  However, it appears that learning to think in a new way
+is very hard for people in general.  Most of the current practioners
+have been learned the structure of the Internet architecture at the
+college, and they have never questioned whether it is good or not; it
+just is.  Thus, understanding HIP requires that they start to think in
+a new way, and that is not particularly easy.</p>
+
+<p>Both the 
+<a href="/web/20120406202951/http://www.tml.hut.fi/~pnr/presentations/HIP-NDSS-slides.pdf">
+slides</a>
+and
+<a href="/web/20120406202951/http://www.tml.hut.fi/~pnr/publicatiosn/NDSS03-Nikander-et-al.pdf">
+paper</a> 
+are available at the web.</p>
+
+<h2>Lunch</h2>
+
+<p>The lunch was served outside, at the lawns in the front of the
+Mission bay.  The lunch was lasagne, almost not worth mentioning.</p>
+
+<h2 id="privpanel">Session 3: Panel on Authentication and Privacy</h2>
+
+<p>The afternoon was started by a panel on authentication and privacy.
+Basically, the panel consisted of different points of view by some
+members of the 
+<a href="/web/20120406202951/http://www.cstb.org/">Computer Science and Telecommunications Board</a>
+study
+<a href="/web/20120406202951/http://cstb.org/project_authentication.html">
+committee</a>
+investigating the implications authentication has on privacy.
+</p>
+
+<h3>Authentication and Privacy -- Some Observations</h3>
+<p class="speaker">Steven Kent</p>
+
+<p>The first presentation was given by Steve Kent, describing the
+overall purpose and goals of the study.  Basically, their aim has been
+to understand the interplay between authentication and privacy, and
+their report is coming out soon.  The membership of the committee has
+been quite diversed, representing different areas of expertese.  He
+also underlined that affecting privacy does not always mean violating
+privacy, and the committee's goal has been to understand all kinds of
+consequences, not just violations.</p>
+
+<p>When proposing this panel to NDSS, Steve's original intend was to
+have the report out, and on the conference CD-ROM.  That didn't
+happen, but the report will be out fairly soon.</p>
+
+<h3 id="terminology">Terminology</h3>
+<p class="speaker">Bob Blakley</p>
+
+<p>The second presentation, given by Bob Blackley, covered mostly
+terminology.  Starting from fairly standard and uncontroversial
+definitions for individual, name, and attribute, he continued to ones
+with more subteties.</p>
+
+<p>Firstly, the committee had come to the conclusion that
+<em>identity</em> is in the eye of the observer.  Consequently, the
+observer is called an identity system.  This has some interesting
+implications.  For example, according to this definition, each of us
+humans posses separate identity systems.  The definitions of the
+identies of the individuals within our mental identity systems
+overlap, but they are not necessarily identical.</p>
+
+<p>Another interesting consequence is that not all identities must
+refer to real individuals.  For example, <em>Lara Croft</em> is a
+identity that many of us have, but itdoesn't have any individual there
+behind.  Furthermore, It is also possible for individuals to have multiple
+identities, tough it didn't become clear to me if an individual can
+have multiple indetities within a single identity system..</p>
+
+<p>Using thse definitions, <em>identification</em> is the process of
+using attributes of an individual to infer who the individual is,
+i.e., which identity does the individual possess within an identity
+system.  It is noteworthy that people get this wrong relatively often
+within their own mental identity system..</p>
+
+<p>Secondly, <em>authentication</em> is the process of establishing
+confidentce in the truth of some claim, and it doesn't have anything
+to do with identification per se.  Even though the claim often
+considers identities and individuals, it does not need to.
+Very seldomly, if ever, authentication in itself is the end goal.
+It is usually done for a purpose.  Authentication is typically used
+for access control or for establishing accountability.</p>
+
+<p>An <em>authenticator</em> is a piece evidence which is presented to
+support authentication of a claim.  It increases confidence to the
+claimed truth.</p>
+
+<p>Bob next came to the distinction between <em>individual
+authentication</em> vs. <em>identity authentication</em>.  From my
+point of view, this is a very important but certainly also very subtle
+issue.  Unfortunately Bob covered these so quickly that I didn't have
+time to take any notes, and we have to wait for the report for the
+final truth.  However, according to my (limited) understanding,
+<em>individual authentication</em> consists of providing evidence that
+a user/suspect/whatever really is a given individual, i.e., known
+human being.  For example, fingerprints or face recognition (performed
+by a human) can be considered as individual authentication.  
+On the other hand, <em>identity authentication</em> consists of
+providing evidence that a user/suspect/whatever really possesses or is
+entitled to an identity defined by an identity system.  Providing an
+account name and a password is a good example of (weak) identity
+authentication.  It does not provide any confidence about the actual
+individual using the system, but it does link the user and an identity
+together. </p>
+
+<p>Finally, <em>authorization</em> is the process of deciding what an
+<em>individual</em> is allowed or not allowed to do.  I found it very
+interesting that they defined authorization in the terms of
+individuals instead of identities, but so they did.</p>
+
+<p>In general it was very encouraging to me to see these definitions,
+since they largely agree with the analysis I did in the introduction
+of my
+<a href="/web/20120406202951/http://www.tml.hut.fi/~pnr/publications/PhDThesis.pdf">
+Ph.D. Thesis</a> back in 1999.  Having these definitions soon out by a
+committee of this high reputation should gradually lead to better use
+of the terms in the literature.</p>
+
+<h3>Technologies</h3>
+<p class="speaker">Steven Bellovin</p>
+
+<p>The next presentation was a pretty standard description of the
+available authentication technologies, starting from the usual trinity
+of something you are, something you know, and something your posses. </p> 
+
+<p>Even though mostly old topics, Steve emphasized that the
+technologies must be used in the right context.  For example, most
+people consider passwords easy and cheap, though not necessarily
+secure.  However, depending on the context, passwords can be really
+expensive, in terms of revocation, replacement procedures, etc.</p>
+
+<h3>Privacy</h3>
+<p class="speaker">Deidre Mulligan</p>
+
+<p>The next presentation was perhaps the most interresting one to me.
+Deidre Mulligan, a privacy expert, started by discussing how the
+concept of privacy is very much dependent on the political system and
+legal system.  It is contextual, cultural, and depends on the time
+period.  Thus, the difficulty of defining what privacy means, exactly,
+leads to dificulties in the discussion.</p>
+
+<p>According to her, privacy can be divided into the following four dimensions:</p>
+<ul>
+  <li>Information privacy
+  <li>Bodily integrity
+  <li>Decision privacy
+  <li>Communcations privacy
+</ul>
+
+<p>Of these, information privacy seems to be on most jeopardy by
+modern information systems.  Basically, information privacy means that
+even when an individiual is giving out information in an transaction,
+that does not mean that the recipient may do anything he or she wishes
+with that information.  The information is given only for a specific
+purpose, and by the information privacy principle it must not be used
+for other purposes.</p>
+
+<p>Bodily integrity is easy to understand; in our culture, everybody
+considers their body private, and there must be an explicit reason for
+bodily searches or other violations of bodily integrity.</p>
+
+<p>Decision privacy relates to our ability to make our own choices.
+Basically, it includes the freedom to decide how to raise you
+children, to chooce you religion, etc.  In my personal view, decision
+privacy may be the most culturally dependent of the four.</p>
+
+<p>Communciations privacy is very much a subset of information
+privacy.  In covers issues such as our expectations about the privacy
+of first class mail, telephone calls, etc.  In a word, it provides
+special protection for information privacy in the communication
+context.</p>
+
+<p>Deidre spoke fairly long and about many important issues.  However,
+I started to be tired (Can you spell jet lag? -- I guess I couldn't at
+that time).  Thus, I just couldnt' make notes of all, and I ndeed to
+resolve in noting a few important issues that she mentioned.</p>
+
+<p>One of the issues that she talked about was the concent and
+requirement of interaction by the individuals.  Today, most
+authentication technologies require some interaction by the
+individual.  But some things, like automated face scanning, i.e.,
+covert authentication system, don't require any interaction by the
+individual being identified.  This is clearly a problem, but I don't
+know how to classify it within the four mentioned categories, and I
+don't remember if she did.</p>
+
+<p>A couple of other issues mentioned were the proliferation of (low
+grade) authentication systems everywhere, the problems with
+aggrecation of data. </p>
+
+<p>Overall, Deidre, like Steve Bellovin earlier, emphasized that 
+the privacy implications always need to be evaluated in some context.
+Otherwise the talk is extremely abstract, and she apologized that her
+talk was this time exactly that, extremely abstract.</p>
+
+<h3>Other issues</h3>
+<p class="speaker">Steve Kent</p>
+
+<p>The final speaker before questions was Steve Kent, again.  This
+time he described some of the problems, such as secondary use of
+identifiers, identity theft being very much as a side effect of
+authentication system design choices, etc.  He also spoke about the
+special role of the government both as an issuer and a consumer of
+credentials.  With private organizations you can make a choice, but it
+is a little harder to change your government.</p>
+
+<p>In general, again, Steve emphasized that privacy is very much a
+system issue, very context dependent.</p>
+
+<h3>Questions</h3>
+
+<p>The presentations were followed by half an hour session with
+questions from the audience.  Some of the more interesting notes are
+collected below.</p>
+
+<!--
+Q: Experiences from other countries?</p>
+A: Blakley: Yes.  But the report does not include a detailed
+analysis. 
+
+Q: Google.  Focus on authentication is missing the ball? 
+The kind of information is becoming available to everybody all the time.
+A: Mulligan: Becoming more difficult to preserve.  Framing a privacy
+analysis.  Useful to think about the other
+Blakley: There are people that don't show up at google at all.
+Important to encouage the category of hits that seem to have 
+something to do with me but are false.  
+Kent: Transaction records typically don't show up in google.
+Worried about linking the transaction records and other information.
+Blakley: There are lots of activities that don't take place
+in the digital world.  
+Mulligan: Different kinds of information.  But sometimes different
+types of information may be used for similar ends.  
+Bellovin:  Easy accessibility.  Genealogy database, mother's maiden
+name is soon not of any good.  
+-->
+
+<p>There is a difference between the kind of information available by 
+<a href="/web/20120406202951/http://www.google.com/about.html">google</a> by examining
+transaction records.  We should really be worried about the possible
+linkage of transaction records and other kinds of more readily
+available information.</p>
+
+<!--
+Q: JI: Privacy implications of data on a national ID card.
+Kent: Did consider the process of what should go to considering
+a natinal ID system.  First, it should be made very clear what is the
+problem to be solved.  Expecially concerns with secondary use.  For
+example, is the driver's license system already a natial ID system.
+-->
+
+<p>Bob Blackely noted that identity theft is possible since we deal
+much more with strangers than we used to do.  There is a difference
+between a small community and the current socity.  One of the problems
+is that Third party assurances are of unknown value.</p>
+
+<p>It is noteworthy that the committee did consider some measures that
+could be done, like recommending limited scope PKIs, recognizing the
+fact that people legitimately have different identities for different
+contexts, authorization from authentication, and acknowledging that
+there are times where you don't have to authenticate someone in order
+to find out whether they have the authorization. 
+
+<!--
+ Blakley: A
+discussion on how to think about the tradeoffs when designing a
+system.  Bellovin: Should use attributes in travel identity card.
+Blakely: What you using the identity for.  Naive notion that identity
+is needed while it is really something else.
+
+Q: 
+Mulligan:  Paper related to Ross Anderson's paper.  First personal
+fictional account about a doctor, authentication and liability
+problems.  Fear flowing.   Limitations of liability.  Consumers are
+not in the best position to judge.
+
+Q: What was suprising.
+Mulligan: Researchers that cut of relative's thumbs.
+Blakley: The difficulty of the issue.  Not: Authentication is either a
+solved problem or a marketing authority.  Given that the
+authentication answer is yes/no, it is surpicing how difficult the issue is.
+Kent: Same social security numbers given to several peoples.
+In 1950s wallet manufacturs with little plastic windows.
+A nontrivial part of the population with social security number 123-4567-89
+Blakley: The system was issuing the same social security number to a
+husband and to a wife that didn't work. 
+-->
+
+<h2>Rest of the day</h2>
+
+<p>After the panel I was so tired that I went to sleep.  I had a wake
+up alarm at 7pm for the banquet, but I just couldn't get up.  Thus, I
+continued sleeping until 3am, and started to work after that.</p>
+
+<h1>Friday, Feb 7th</h1>
+
+<p>The skies were clear in the morning, like the day before, and this
+time I was prepared for the cold.  I also crossed the peninsula to see
+the ocean.  There were people surfing, in wetsuits, already that
+early (6:30am).  Californian lifestyle, I guess.e</p>
+
+<h2>Session 5: Fault and intrusion detection</h2>
+
+<p>The first session in the second day concentrated on vulnerability and
+intrusion detection.  It was a long session, with four papers, and I
+didn't find any of them particularly interesting, but that may be just
+because I don't care that much about the topic areas.</p>
+
+<h3>Comparison of tools for detecting buffer overflows and other
+programming errors</h3>
+<p class="speaker">John Wilander</p>
+
+<p>The presentation and paper compared various tools for dynamic
+(runtime) discovery of buffer overflows, format string attacks, and
+other similar attacks utilizing programming mistakes.  The same
+authors had compared Tools for static (compile time) discovery in 
+an earlier paper that had appeared  at NordSec'02.</p>
+
+<p>In the current paper, four tools were tested: StackGuard,
+Stackhield, ProPolic, and Libsafe/Libverify.  ProPolice appeared to be
+best of the four tested.</p>
+
+<h3>Traps and Pitfals in System Call Interposition based Security Tools</h3>
+<p class="speaker">Tal Garfinkel</p>
+
+<p>Intrusion detection by interposing (tracing/spyking) system calls
+have become a popular technology after the 
+<a href="/web/20120406202951/http://www.cs.berkeley.edu/~daw/janus/">Janus</a> paper
+ won the best paper award at Usenix.  Current existing tools
+include: Janus, MapBox, Systrace, and various kinds of software
+Wrappers.</p>
+
+<p>The main point in the presentation was that the system call
+interface is complex, not well documented, changes over time, and not
+designed for interposition.  Consequently, the tools turn out to be
+quite broken in practise; the authors found holes in every tool they
+looked at.  However, all the problems described the the talk were
+fairly subtle, seeming to require detailed knowledge about the tool
+used.</p>
+
+<p>I am not very convinced about the value of the paper, but it
+certainly helps to break some overly confidence people may have on
+Janus and friends.</p>
+
+<h3>Detecting Service Violations and DoS Attacks</h3>
+<p class="speaker">Ahsan Habib</p>
+
+<p>The speaker had a very hard accent, making the talk very hard to
+understand.  Consequently, I didn't really try to listen to the talk.
+However, based on the slides, the paper seemed to include a very good
+analysis of the various DoS prevention tools and techniques
+available.  I would recommend studying the paper for those people that
+are interested in DoS attacks and their prevention.</p>
+
+<h3>A Virtual Machine Introspection based Architecture 
+for Intrusion Detection</h3>
+<p class="speaker">Tal Garfinkel</p>
+
+<p>The idea of this talk was to use a Virtual Machine Monitor to
+co-locate an Intrusion Detection System at a physical host, but run it
+in a really isolated protection domain, a separate virtual machine.
+This leads to a situation where the IDS is isolated from the watched
+operating environment, but where is has good visibility to watch its
+target and detect suspiciously looking activity.  In a way, the
+technique gives a view from below.</p>
+
+<p>Since the topic of the talk was really beyond my area of expertese
+and my interests, I didn't listen too closely, even though the
+practical implementation using VMware sounded interesting..</p>
+
+<h2>Session 6: Spam and IP Telephony</h2>
+
+<p>The second session before lunch concentrated on spam prevention, but
+also contained a talk about IP Telephone security.  I basically
+skipped the latter one; the paper is probably interesting to teh SIP
+people, though.</p>
+
+<h3 id="spas">Why do we still have spam, dammit</h3>
+<p class="speaker">JI, again</p>
+
+<p>We had another chance to enjoy listening to JI.  As everybody
+agrees, spam is bad.  A significant fraction of JIs e-mail is spam;
+mine likewise.  </p>
+
+<p>Spam is a social desease.  Spammers are not in the same community
+as we are.  JI doesn't hang out with spammers; neither do I.</p>
+
+<p>We can try legistlating against spam, but that has its own problems,
+which JI didn't want to go to in his speech.</p> 
+
+<p>Spam starts with exposure, by giving out your e-mail address an an
+on-line forum, by buying something on-line, or even sometimes by
+person-to-person messages.  We give out the e-mail address since we
+want the recipients to be able to answer to us.  There is always also
+a <em>reason</em> why we want them to be able to respond to us.</p>
+
+<p>The situation is complicated because e-mail addresses are long-lived,
+and therefore they sooner or later end up in spam lists, and there is
+no real way of getting them removed.  So, we want the e-mail addresses
+to have an <em>expiration date.</em> </p>
+
+<h4>From spam to SPAs: Single Purpose Addresses</h4>
+
+<p>Arriging to the core of his talk, he proposed to combat spam with
+SPAs.  Basically, we need to define a policy under which conditions a
+received e-mail message is acceptable:</p>
+<ul>
+  <li>what: a purpose for the e-mail</li>
+  <li>whence: time limit within which the address is acceptable</li>
+  <li>who: expected sender's address who may use the address</li>
+</ul>
+<p>
+In most transactions you want the e-mail address to be usable for
+a while, maybe once or twice.  Somewhat similar to single use credit
+card numbers.
+</p>
+
+<p>Now, the idea of SPAs is to use unique email addresses that encode
+policy.  The policy must be enforced by the creator of the address in
+such a way that random addresses must not work.  In practice, a simple
+SPA address encodes an expiration date and an expected sender's address
+into a base32 encoded user name portion of an e-mail address.</p>
+
+<p>Mailing lists are a problem for SPAs since the recipients address
+in only in the envelope.  Thus, JI made a little hack that adds the
+envelope address into a X-SPA-To: header so that the recipient
+address is indeed visible in the received e-mail message.</p>
+
+<p>It must be noted that SPAs are just another set of tools in the
+toolbox, with the big benefit that it does not need any local state to
+be remembered.  It is not a panacea.  For example, a
+challenge-response system is much more appropriate for already exposed
+addresses.  On the other hand, what is really good about SPAs is that
+if enough people start using them, it will make the spam lists larger,
+and cause more costs to the spammers.</p>
+
+<p>During the discussion, somebody suggested that the system could be
+augmented with a web site that can be used to request one-time short
+time addresses that are valid for only one sender.  In that way
+real people can get an e-mail address for you, but they don't do much
+good for spammers.  Of course, if needed, such a web site can include
+a human recognition feature, making it virtually impossible for
+spammers to create any automatic way of gettinng such addresses.</p>
+
+<p>A down side of SPAs is that it is currently practically impossible
+to get code released from AT&amp;T, and therefore the system is not
+available.  However, JI urged people to read the paper, to reimplement
+the system, and to put in in public.  I think this would be a great
+student project for someone.  Besides, having JI on your side is not
+that bad thing...</p>
+
+<h3 id="mbf">Modelrately hard, memory-bound functions </h3>
+<p class="speaker">Mike Burrows, Microsoft Research</p>
+
+<p>The second paper in the session got the outstanding paper award in
+the conference.  Like the paper, the talk was good, as you would
+expect from Mike Burrows.  Basically, he described a class of
+<em>memory intesive</em> functions that can be used to used to
+implement protocol puzzles.</p>
+
+<p>The functions described can be described as a form weak
+cryptography that runs approximately the same speed on most of
+computers.  Since they are memory bound and not CPU bound, the
+difference in CPU speeds does not affect the run-time of the functions
+that much.  Instead, these functions are designed in such a way that
+they cause constant cache misses, making the CPU - memory interface
+the bottleneck.  Since there is less variation on the speed of the
+main memory, the present functions run at approximately same speed 
+a large class of current computers, from top model servers to
+PDAs.</p> 
+
+<p>Mike started his talk by talking about the basic models of
+preventing spam, DoS in general.  While there are several method, the
+current work is based on the idea of requiring a payment somehow,
+making people to pay by money, attention, or computation.  And it is
+computation, or actually memory access, that people pay with in this
+time.  </p>
+
+<p>Earlier works have relied on CPU-intensive computations, but
+machines vary widely in CPU power.  The trick away from the CPU speed
+variations is not to spend CPU but memory bandwith, since the gap in
+memory-system performance is much smaller.  Thus, memory-bound
+functions should be more egalitarian.</p>
+
+<p>Thus, the goal of this work was a family of problems that take
+many cache misses to solve, e.g. in order of 2^23 cache misses, is much
+faster to set and check, and be expressed and answered concisely, can
+be made harder by changing a parameter, and solving one problem
+doesn't help with others.  The requirements are pretty similar to the
+CPU-intensive puzzle schemes other than to the use of cache
+misses.</p>
+
+<p>After considering a number of possible constructes, they 
+decided to use some near-random function F(), and require reversing a
+series of applications.  That is, the recipient would select a random
+number <em>x</em>, apply F() repeatedly on that, producing a
+series F(x), F(F(x)), F(F(F(x))), and finally compute a checksum over
+the series.  It would then hand out the final value in the series, 
+F^k(x), and the checksum to the sender.  The sender needs to search
+out the path from the final value to x, and return it back to the
+reciepient.</p>
+
+<p>The function F() is constructed in such a way that the most
+efficient way of inverting is to store the inverse values in a table
+and to index that table directly.  Furthermore, since F() is (near)
+random, any given image <em>y</em> is likely to have a number of
+pre-images <em>F^-1(y)</em>.  This results in a tree of pre-images
+rooted at the value F^k(x).  The sender has to search over this tree
+space, test each path in the tree with the checksum, and finally
+return the path that matches with the checksum.</p>
+
+<p>Most modern computers have a few megabytes of cache.  To force
+cache misses it is necessary to use a large enough pre-image to
+access.  It appears that a space size 2^22 - 2^23 seems to be
+appropriate, i.e., to use more than 8MB but less than 64MB of memory.
+In the tree functions used, an appropriate tree depth appears to be
+between 2^11 - 2^13, or the square root of the space size.  However,
+it should not be much larger, or the become some CPU intensive
+shortcuts available.</p>
+
+<p>In their empirical experiments, a WinCE based 300 MHz PDA was about
+five time slower than a 2.4 GHz top end server.</p>
+
+<p>In general, the talk was very good, and I found out the paper to be
+excellent.  A required read for anyone dealing with DoS resistance.</p>
+
+<h3>Secure IP telephony Using Multi-layered Protection</h3>
+<p class="speaker">Brennen Reynolds, UC Davis</p>
+
+<p>This talk focused fairly much on how IP telephony and SIP works.
+Since I personally couldn't care less about SIP, I basically just
+skipped the talk.  However, reading the paper is probably useful for
+people working with SIP and frieds.</p>
+
+<h2>Lunch</h2>
+
+<p>The lunch was served out, at the lawns, like yesterday.  This the
+the dish was slightly better, roasted something, and actually almost
+delicious. </p>
+
+<h2>Session 7: Cryptography</h2>
+
+<p>The first session after the lunch concentrated on crypto.  As you
+probably know, I am not a cryptographer, and never will be.
+Consequently, I didn't get too much from this session.</p>
+
+<h3>Proxy cryptography revisited</h3>
+<p class="speaker">Anca-Andreea Ivan</p>
+
+<p>I have to confess I didn't understand the point of this talk at
+all.  Read the paper if you are interested.</p>
+
+<h3>Proactive Two-Party Signatures for User Authentication</h3>
+<p class="speaker">Antonio Nicolosi</p>
+
+<p>The authors looked for solutions in a situation where the users
+want to create signatures using a software only client, where the
+user does not completely trust the client computer.  Under these
+conditions, the user can't use her public key directly at the client.
+</p>
+
+<p>One possible solution is to split the private key, and to create
+a signature at two different computers:  An initial but still invalid
+signature is created by the user at the partially trusted client,
+using a key half available only at the client.  The signature is then
+validated by a second key half, available at a partially-trusted
+server.</p>
+
+<p>The server keeps a log of the signatures it helps to sign.  The
+server endorses signatures and logs all accesses.  Additionally, the
+server can also act as a repository for the user's encrypted key half.
+But is is still hard to recover if Alice's key half gets compromised.</p>
+
+<p>Thus, we arrive to proactive two-party signatures.  Add a refresh
+protocol to re-randomize the <em>sharing</em> of the key.  Thus,
+whenever the sharing is refreshed, a possibly compromised user's half
+of the key is rendered useless.</p>
+
+<p>Source code available at <a href="/web/20120406202951/http://www.fs.net/">http://www.fs.net</a></p>
+
+<p>Good talk and good work, if you happen to need this kind of a scheme.</p>
+
+<h2>Session 8: </h2>
+<h3>Efficient Multicast Packet Authentication</h3>
+<p class="speaker">Refik Molva</p>
+
+<p>A multicast setting is an asymmetric setting.  A generator
+generates messages, and a number of verifiers verify them.  
+The setting is <em>lossy</em>; not all packet reach all
+recipients.  Due to the nature of the application protocols, the
+situation is usually also <em>space and time constrained</em>.
+That is, the authentication code should use a fairly small amount of
+space in a packet, and it must be fast to either verify (pre-recorded
+data) or generate and verify (real-time) packets.</p>
+
+<p>To achieve the space and time constraints, the usual methods
+applied is <em>signature amortization</em>.  That is, the cost of
+signature verification is divided over a number of packets.  
+There are three popular techniques for signature amortization:</p>
+<ul>
+  <li>Hash trees</li>
+  <li>Hash chains</li>
+  <li>Forward error correction (FEC)
+</ul>
+
+<p>This paper concetrated on error correction codes to recover hashes
+on a lossy channel.  Special type of error codes, called erasure codes,
+that work on blocks (like in block ciphers).  For example, Tornado
+Codes that are based on xor.</p>
+
+<p>The basic idea is compute hashes over packets to be sent, and then
+create a signature over all of the hashes.  Additionally, to provide
+robustness against packet losses, one creates error correction codes,
+and conceptually adds them to the signature.  The error correction
+codes allow recovery from packet losses, and still be able to compute
+the hash values for the packets and to verify the signature.</p>
+
+<p>The signature and error correction codes can be send in a previous
+batch of packets, along with the packets to be checked, or piggybacked
+on the next bunch of packets.  The method depends on the needs of the
+application.  In all cases, there is a need for buffering, and
+therefore the present method is not suitable for real-time media.</p>
+
+<h3 id="sensenet">Efficient Distribution of Key Chain Commitments for
+Broadcast Authentication in Distributed Sensor Networks</h3>
+<p class="author">Peng Ning</p>
+
+<p>Sensors need to authenticate commands received from the (more
+powerful) base stations.  Sensors are resource constrainted, low
+computational capabilities, low storage space, slow communications,
+and maybe even energy constrains.</p>
+
+<p>The work described is based on 
+<a href="/web/20120406202951/http://www.ece.cmu.edu/~adrian/projects.html#TESLA">uTESLA</a>, 
+and it
+extends into what the authors called Multi-level uTESLA.  Basically,
+they enhanced uTESLA with a new hash chain initialization protocol
+that is based key predetermination and which is thereby able to use
+broadcast instead of unicast.  In a way, the method may be described
+as using a high level key chain to authenticate commintes in low level
+key chains.</p>
+
+<p>While alone I didn't find this paper too interesting, it gave a
+nice contrast to <a href="/web/20120406202951/http://koti.welho.com/pnikande/ndss2003-report.html#esmrp">the first regular paper in the 
+conference</a>, which described how to use hash chains to secure
+routing messages.</p>
+
+<h2>Rest of the day</h2>
+
+<p>Similar to the previous day, I became really tired during the
+afternoon.  There were relatively few people left after the closing
+remarks, and I didn't meet anyone with whom I had been able to go to a
+dinner.  Thus, I bought a roll, some crisps, and a beer from a local
+deli, and went early to bed, allowing me to wake up 4am fresh and
+ready for the return flights.</p>
+
+<div class="footer">
+  <p class="validator">
+    <a href="/web/20120406202951/http://validator.w3.org/check?uri=referer">
+      <img src="/web/20120406202951im_/http://www.w3.org/Icons/valid-html401-blue.png"
+           alt="Valid HTML 4.01 Strict" 
+           height="31" width="88">
+    </a>
+  </p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:29:51 Apr 6, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:15:54 May 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
