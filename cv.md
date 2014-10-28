@@ -75,6 +75,14 @@ patents.
 ## Experience
 
 <dl>
+  <dt>Founder and CTO, Solu Machines, 2014-present</dt>
+
+  <dd>Solving "impossible" challenges.  Hopefully.</dd>
+
+  <dt>Software Architect, Senseg, 2014-present</dt>
+
+  <dd>Maintenance and updates of the software architecture.</dd>
+
   <dt>Research Fellow, Aalto University, 2014-present</dt>
 
   <dd>Research on distributed embedded systems, especially security.</dd>
@@ -83,7 +91,7 @@ patents.
 
   <dd>Developing open source hardware and software for fixed IoT.</dd>
 
-  <dt>Chief Software Architect, Senseg, 2011-present</dt>
+  <dt>Chief Software Architect, Senseg, 2011-2014</dt>
 
   <dd>Creation of the software architecture and software team from the
   ground up.</dd>
