@@ -14,7 +14,7 @@ layers from hardware-software interface to user interfaces.
 
 ### Career overview
 
-In 1988 Pekka founded Nixu, today a leading computer and network
+In 1988 Pekka founded [Nixu](https://www.nixu.com), today a leading computer and network
 security consultant company in Finland, driving it for over 10 years,
 followed by another 10 years at various leadership roles at Ericsson
 Research.
@@ -28,12 +28,12 @@ interfaces, and computer and communications security. In early 1990s,
 he spend a few years focusing on user interface aspects, creating a
 user centric perspective that has remained active since then. From
 1996 until 2006 he was active in Internet standardisation, and served
-at the Internet Architecture Board (IAB) from March 2005 to February
+at the [Internet Architecture Board (IAB)](https://www.iab.org) from March 2005 to February
 2006. From 2007 until 2010 his work focused on the future of the
 Internet architecture, with special attention to socio-economic,
 implementation, scalability, and high performance aspects.
 
-In March 2011 he joined Senseg, a leading haptics startup, taking the
+In March 2011 he joined [Senseg](http://www.senseg.com), a leading haptics startup, taking the
 responsibility for the software architecture. He built Senseg's
 software team and processes from the ground up, establishing extreme
 programming (XP) and continuous integration and testing (CIT) as the
@@ -41,20 +41,23 @@ main practises. With his team, he implemented the Senseg software
 architecture, iterating in three major rounds, each time adding
 significant functionality.
 
-In May 2013, Pekka founded the Ell-i open source co-operative with a
+In May 2013, Pekka founded the [Ell-i open source co-operative](https://ell-i.org) with a
 dozen of other people.  From May 2013 until April 2014, pushing the
-Ell-i technical platform was his main "hobby".  In May 2014 Ell-i
-became a part-time job for Pekka.  In May 2014, Pekka was nominated a
-Research Fellow at Aalto University school of Science and Technology
-(the former Helsinki University of Technology).
+Ell-i technical platform was his main "hobby".  In May 2014, Pekka was
+nominated a Research Fellow at Aalto University school of Science and
+Technology (the former Helsinki University of Technology).
 
-In autumn 2014 Pekka co-founded Solu Machines together with Kristoffer
+In autumn 2014 Pekka co-founded [Solu Machines](http://www.solu.co) together with Kristoffer
 Lawson and Javier Reyes.  From October 2014 until October 2015 Pekka
 ran the company technology in the CTO role.  He left Solu at December
 2015 due to unresolvable disputes over the company overall strategy.
 
-In January 2016 Pekka joined PulseOn as the Chief Software Architect,
-with an agenda not too dissimilar from the one at Senseg.
+From January 2016 to September 2016 he was the Chief Software Architect
+at PulseOn, with an agenda not too dissimilar from the one at Senseg.
+
+From October 2016 Pekka has been acting more actively in his Research
+Fellow role at Aalto University, while at the same time continuing at
+startup companies, including [Ll co-op](https://luottamuksenloyly.fi).
 
 ### Expertise
 
@@ -87,15 +90,17 @@ Pekka has authored or co-authored about 100 refereed scientific
 articles, and is the inventor or a co-inventor in some 20 priority
 patents.
 
-Pekka has first-hand experience on five startup companies: Nixu,
-Senseg, Ell-i, Solu, and PulseOn.  Additionally, during his Ericsson
+Pekka has first-hand experience on six startup companies: Nixu,
+Senseg, Ell-i, Solu, PulseOn, and Ll co-op.  Additionally, during his Ericsson
 times he ran two startup ideas for a few months each, before finding
 out that the markets were not ready for the ideas.
 
 ## Experience
 
 <dl>
-  <dt>Chief Software Architect, PulseOn, Jan 2016-</dt>
+  <dt>Co-counder and CTO, Luottamuksen Löyly co-op, Oct 2016 - present</dt>
+
+  <dt>Chief Software Architect, PulseOn, Jan 2016 - Sep 2016</dt>
   <dd>Creation of a software architecture and processes almost from
   the ground up.</dd>
 
