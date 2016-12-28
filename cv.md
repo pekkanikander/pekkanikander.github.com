@@ -1,9 +1,3 @@
----
-layout: page
-title: CV
-tagline: Pekka Nikander
-group: navigation
----
 ## Profile
 
 Dr. Pekka Nikander has over 30 years software development

@@ -1,9 +1,3 @@
----
-layout: page
-title: Publications
-tagline: Pekka Nikander
-group: navigation
----
 ## Publications
 
 * Pekka Nikander, Kameswar Rao Vaddina, Petri Liuha, Hannu Tenhunen,

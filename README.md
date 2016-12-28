@@ -1,9 +1,6 @@
 pekkanikander.github.com
 ========================
 
-Pekka Nikander's web site, based on Jekyll Bootstrap 0.3.0
+Pekka Nikander's web site
 
-## Usage
-
-For Jekyll Bootstrap usage and documentation please see: <http://jekyllbootstrap.com>
 
