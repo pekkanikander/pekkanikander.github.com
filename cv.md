@@ -92,7 +92,7 @@ out that the markets were not ready for the ideas.
 ## Experience
 
 <dl>
-  <dt>Co-counder and CTO, Luottamuksen Löyly co-op, Oct 2016 - present</dt>
+  <dt>Co-counder and CTO, Luottamuksen Loyly co-op, Oct 2016 - present</dt>
 
   <dt>Chief Software Architect, PulseOn, Jan 2016 - Sep 2016</dt>
   <dd>Creation of a software architecture and processes almost from

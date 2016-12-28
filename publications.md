@@ -4,13 +4,13 @@
   "ELL-i: An inexpensive platform for fixed things," Scalable
   Computing: Practice and Experience, 14(3), 2013
 
-* Dirk Trossen, Janne Riihijärvi, Pekka Nikander, Petri Jokela, Jimmy
-  Kjällman, Jarno Rajahalme, "Designing, implementing and evaluating a
+* Dirk Trossen, Janne Riihijarvi, Pekka Nikander, Petri Jokela, Jimmy
+  Kjallman, Jarno Rajahalme, "Designing, implementing and evaluating a
   new internetworking architecture," Computer Communications,
   35(17):2069-2081, 201.
 
-* Mikko Särelä, Christian Esteve Rothenberg, Tuomas Aura, András
-  Zahemszky, Pekka Nikander, Jörg Ott, "Forwarding anomalies in Bloom
+* Mikko Sarela, Christian Esteve Rothenberg, Tuomas Aura, Andras
+  Zahemszky, Pekka Nikander, Jorg Ott, "Forwarding anomalies in Bloom
   filter-based multicast, "in INFOCOM 2011, 30th IEEE International
   Conference on Computer Communications, Joint Conference of the IEEE
   Computer and Communications Societies, 10-15 April 2011, Shanghai,
@@ -25,7 +25,7 @@
   Identity Protocol (HIP): an overview." Next-Generation Internet
   (2011): 107.
 
-* Somaya Arianfar, Pekka Nikander, and Jörg Ott, "On content-centric
+* Somaya Arianfar, Pekka Nikander, and Jorg Ott, "On content-centric
   router design and implications," in Proceedings of the ACM SIGCOMM
   Re-Architecting the Internet Workshop (ReARCH'10).  2010.
 
@@ -33,7 +33,7 @@
   Information-centric Networks," in Proceedings of the ACM SIGCOMM
   Re-Architecting the Internet Workshop (ReARCH'10).  2010.
 
-* Somaya Arianfar, Jörg Ott, Lars Eggert, Pekka Nikander, and Walter
+* Somaya Arianfar, Jorg Ott, Lars Eggert, Pekka Nikander, and Walter
   Wong, "A transport protocol for content-centric networks. Extended
   abstract," 18th IEEE International Conference on Network Protocols
   (ICNP'10), Kyoto, Japan. 2010.
@@ -42,7 +42,7 @@
   filter forwarding on the NetFPGA," Proceedings of the 1st European
   NetFPGA Developers Workshop, Cambridge, UK.  2010.
 
-* András Zahemszky, Petri Jokela, Mikko Särelä, Sami Ruponen, James
+* Andras Zahemszky, Petri Jokela, Mikko Sarela, Sami Ruponen, James
   Kempf, and Pekka Nikander, "MPSS: Multiprotocol stateless
   switching", in INFOCOM IEEE Conference on Computer Communications
   Workshops, 2010. IEEE.
@@ -72,31 +72,31 @@
   Communications Surveys and Tutorials, Volume 12 Issue 2,
   pp. 186-204, April 2010.
 
-* Mikko Särelä, Christian Esteve Rothenberg, András Zahemszky, Pekka
-  Nikander, Jörg Ott, "BloomCasting: Security in Bloom Filter Based
-  Multicast, "in Tuomas Aura, Kimmo Järvinen, Kaisa Nyberg, editors,
+* Mikko Sarela, Christian Esteve Rothenberg, Andras Zahemszky, Pekka
+  Nikander, Jorg Ott, "BloomCasting: Security in Bloom Filter Based
+  Multicast, "in Tuomas Aura, Kimmo Jarvinen, Kaisa Nyberg, editors,
   Information Security Technology for Applications - 15th Nordic
   Conference on Secure IT Systems, NordSec 2010, Espoo, Finland,
   October 27-29, 2010, Revised Selected Papers. Volume 7127 of Lecture
   Notes in Computer Science, pages 1-16, Springer, 2010.
 
 * Christian Esteve Rothenberg, Petri Jokela, Pekka Nikander, Mikko
-  Särelä, and Jukka Ylitalo, "Self-Routing Denial-of-Service Resistant
+  Sarela, and Jukka Ylitalo, "Self-Routing Denial-of-Service Resistant
   Capabilities Using In-packet Bloom Filters," in proceeding of:
   Computer Network Defense (EC2ND), November 2009.
 
-* Petri Jokela, András Zahemszky, Christian Esteve Rothernberg, Somaya
+* Petri Jokela, Andras Zahemszky, Christian Esteve Rothernberg, Somaya
   Arianfar, and Pekka Nikander, "LIPSIN: Line Speed Publish/Subscribe
   Inter-Networking," SIGCOMM 2009, Barcelona, August 17-21, 2009.
 
-* András Zahemszky, Andras Csaszar, Pekka Nikander, and Christian
+* Andras Zahemszky, Andras Csaszar, Pekka Nikander, and Christian
   Esteve Rothenberg, "Exploring the PubSub Routing/Forwarding Space,"
   to appear in Future-Net'09, ICC2009 Future Networking Workshop,
   Dresden, 18 June 2009.
 
-* David Hausheer, Pekka Nikander, Vincenzo Fogliati, Klaus Wünstel,
-  María Ángeles Callejo-Rodrígues, Santiago Ristol Jorba, Spiros
-  Spirou, Latif Ladid, Wolfgang Kleinwächter, Burkhard Stiller, Malte
+* David Hausheer, Pekka Nikander, Vincenzo Fogliati, Klaus Wunstel,
+  Maria Angeles Callejo-Rodrigues, Santiago Ristol Jorba, Spiros
+  Spirou, Latif Ladid, Wolfgang Kleinwachter, Burkhard Stiller, Malte
   Behrmann, Michael Boniface, Costas Courcoubetis, Man-Sze Li, "Future
   Internet Socio-Economics - Challenges and Perspectives," in Georgios
   Tselentis, John Domingue, Alex Galis, Anastasius Gavras, David
@@ -104,7 +104,7 @@
   Towards the Future Internet - A European Research Perspective. pages
   1-11, IOS Press, 2009.
 
-* Jarno Rajahalme, Mikko Särelä, Pekka Nikander, and Sasu Tarkoma,
+* Jarno Rajahalme, Mikko Sarela, Pekka Nikander, and Sasu Tarkoma,
   "Incentive-Compatible Caching and Peering in Data-Oriented
   Networks", in Re-Arch'08, Dec 9 2008. 
   www.sigcomm.org/co-next2008/rearch.html
@@ -124,7 +124,7 @@
   hosts", in Computer Communications, Volume 31, Issue 10, 25 June
   2008, pages 2457-2467. (Email for a copy if you are interested.)
 
-* Mikko Särelä and Pekka Nikander, "Social Aspects of Trust in the
+* Mikko Sarela and Pekka Nikander, "Social Aspects of Trust in the
   Internet: Issues and Incentives," in Proceedings of 7th Conference
   on Telecommunication Techno-Economics (CTTE 2008), June 18 2008,
   Paris, France.
@@ -150,7 +150,7 @@
   and Privacy in Communication Networks and the Workshops, SecureComm
   2007, Nice, France, 17-21 September, 2007. pages 518, IEEE, 2007.
 
-* Satu Elisa Schaeffer, Stefano Marinoni, Mikko Särelä, and Pekka
+* Satu Elisa Schaeffer, Stefano Marinoni, Mikko Sarela, and Pekka
   Nikander, "Dynamic Local Clustering for Hierarchical Ad Hoc
   Networks," in Proceedings of International Workshop on Wireless
   Ad-hoc and Sensor Networks (IWWAN'06), New York, NY, June 2006.
@@ -167,7 +167,7 @@
   Secure Networking Architecture for Mobile Hosts," Technical report
   2005-2, Helsinki Institute for Information Technology, June 2005.
 
-* Jari Arkko, Pekka Nikander, and Mats Näslund, "Enhancing Privacy
+* Jari Arkko, Pekka Nikander, and Mats Naslund, "Enhancing Privacy
   with Shared Pseudo Random Sequences," in Security Protocols, 13rd
   International Workshop, Cambridge, 20-22 April, 2005.
 
@@ -180,12 +180,12 @@
   Wireless and Mobile Security Workshop, San Diego, CA, USA,
   February 2005.
 
-* Pekka Nikander, Jari Arkko, and Börje Ohlman, Host Identity
+* Pekka Nikander, Jari Arkko, and Borje Ohlman, Host Identity
   Indirection Infrastructure (Hi3)," in Proceedings of The Second
   Swedish National Computer Networking Workshop 2004 (SNCNW2004),
   Karlstad University, Karlstad, Sweden, Nov 23-24, 2004.
 
-* Mikko Särelä, Pekka Nikander, "Applying Host Identity Protocol to
+* Mikko Sarela, Pekka Nikander, "Applying Host Identity Protocol to
   Tactical Networks," in Proceedings of Military Communications
   Conference (MILCOM2004), Monterey, CA, Oct 31-Nov 3, 2004.
 
@@ -277,7 +277,7 @@
   Proceedings of Credential-basierte Zugriffskontrolle in offenen,
   interoperablen IT-Systemen, Dortmund, Germany, October 2, 2002.
 
-* Jari Arkko, Tuomas Aura, James Kempf, Vesa-Matti Mäntylä, Pekka
+* Jari Arkko, Tuomas Aura, James Kempf, Vesa-Matti Mantyla, Pekka
   Nikander, and Michael Roe, "Securing IPv6 Neighbor and Router
   Discovery," in the Proceedings of Wireless Security Workshop
   (WiSe2002), September 28, 2002, Atlanta, GA.
@@ -338,8 +338,8 @@
   Proceedings of Network and Distributed System Security 2001
   (NDSS2001), San Diego, California, February 8-9, pp. 161-172, 2001.
 
-* Juha P.T. Koponen, Pekka Nikander, Juhana Räsänen, and Juha
-  Pääjärvi, "Internet access through WLAN with XML encoded SPKI
+* Juha P.T. Koponen, Pekka Nikander, Juhana Rasanen, and Juha
+  Paajarvi, "Internet access through WLAN with XML encoded SPKI
   certificates," in Proceedings of NordSec2000, October 12-13,
   Reykjavik, Island, October 2000.
 
@@ -367,7 +367,7 @@
 
 * Pekka Nikander and Lasse Metso, "Policy and Trust in Open
   Multi-Operator networks," in Proceedings of IFIP SmartNet'2000,
-  September 20-22, 2000, Technishe Universtät Wien, Vienna, Austria,
+  September 20-22, 2000, Technishe Universtat Wien, Vienna, Austria,
   Kluver Academic Publishers, September 2000.
 
 * Pekka Nikander, "Fault Tolerance in Decentralized and Loosely
@@ -402,7 +402,7 @@
   of the OPENARCH 2000, March 26-27, 2000, Tel-Aviv, Israel, IEEE
   Communications Society, New York, NY.
 
-* Pekka Nikander and Juha Pärssinen, "A Java Beans Framework for
+* Pekka Nikander and Juha Parssinen, "A Java Beans Framework for
   Cryptographic Protocols," in Mohammed Fayad, Douglas Schmidt and
   Ralph Johnson (Editors), Implementing Applications Frameworks,
   Wiley, Sep 1999.
