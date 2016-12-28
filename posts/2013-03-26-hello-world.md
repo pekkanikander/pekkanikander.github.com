@@ -1,12 +1,3 @@
----
-layout: post
-title: "Hello World"
-description: "Pekka's first blog post"
-category: 
-tags: [github, jekyll]
----
-{% include JB/setup %}
-
 ## Time to get modern
 
 The very first web site of my own I had back in the 1990s; for

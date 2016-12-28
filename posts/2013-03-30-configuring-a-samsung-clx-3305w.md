@@ -1,12 +1,3 @@
----
-layout: post
-title: "Manually configuring a Samsung CLX-3305W"
-description: ""
-category: 
-tags: [printing, wlan, bonjour]
----
-{% include JB/setup %}
-
 ## Samsung CLX-3305W with Mac OS X 10.7 over existing WLAN
 
 My father in law couldn't get his Samsung CLX-3305W to work from his
