@@ -1,9 +1,4 @@
----
-layout: page
-title: Pekka Nikander
-tagline:
----
-{% include JB/setup %}
+# Pekka Nikander
 
 Pekka Nikander is a software architect and lead programmer with over
 30 years of industry experience, with an inkling for embedded and things.
