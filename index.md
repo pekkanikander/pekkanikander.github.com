@@ -14,14 +14,6 @@ feel free to send e-mail to me, and I'll add the material to the
 website and mail back to you.  I usually respond to e-mail within a
 day or two.
 
-## A failed attempt to create a blog
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
 ## Selected publications
 
 * Pekka Nikander, Andrei Gurtov, and Thomas R. Henderson, ["Host
