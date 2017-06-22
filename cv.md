@@ -20,38 +20,30 @@ has a strong background in UNIX, all levels of programming from FPGAs
 and system programming to compiler design and graphical user
 interfaces, and computer and communications security. In early 1990s,
 he spend a few years focusing on user interface aspects, creating a
-user centric perspective that has remained active since then. From
-1996 until 2006 he was active in Internet standardisation, and served
-at the [Internet Architecture Board (IAB)](https://www.iab.org) from March 2005 to February
-2006. From 2007 until 2010 his work focused on the future of the
-Internet architecture, with special attention to socio-economic,
-implementation, scalability, and high performance aspects.
+user centric perspective that has remained active since then. From 1996
+until 2006 he was active in Internet standardisation, and served
+at the [Internet Architecture Board (IAB)](https://www.iab.org) from
+March 2005 to February 2006. From 2007 until 2010 his work focused on
+the future of the Internet architecture, with special attention to
+socio-economic, implementation, scalability, and high performance
+aspects.
 
-In March 2011 he joined [Senseg](http://www.senseg.com), a leading haptics startup, taking the
-responsibility for the software architecture. He built Senseg's
-software team and processes from the ground up, establishing extreme
-programming (XP) and continuous integration and testing (CIT) as the
-main practises. With his team, he implemented the Senseg software
-architecture, iterating in three major rounds, each time adding
-significant functionality.
+In March 2011 he joined [Senseg](http://www.senseg.com), a leading
+haptics startup, taking the responsibility for the software
+architecture. In 2013, Pekka founded the
+[Ell-i open source co-operative](https://ell-i.org) with a dozen of
+other people.  In 2014, Pekka was nominated a Research Fellow at Aalto
+University school of Science and Technology (the former Helsinki
+University of Technology).  Furthermore, in 2014 Pekka co-founded
+[Solu Machines](http://www.solu.co) together with Kristoffer Lawson
+and Javier Reyes, leaving it a year later due to internal disputes.
+From January 2016 to September 2016 he was the Chief Software
+Architect at PulseOn.
 
-In May 2013, Pekka founded the [Ell-i open source co-operative](https://ell-i.org) with a
-dozen of other people.  From May 2013 until April 2014, pushing the
-Ell-i technical platform was his main "hobby".  In May 2014, Pekka was
-nominated a Research Fellow at Aalto University school of Science and
-Technology (the former Helsinki University of Technology).
-
-In autumn 2014 Pekka co-founded [Solu Machines](http://www.solu.co) together with Kristoffer
-Lawson and Javier Reyes.  From October 2014 until October 2015 Pekka
-ran the company technology in the CTO role.  He left Solu at December
-2015 due to unresolvable disputes over the company overall strategy.
-
-From January 2016 to September 2016 he was the Chief Software Architect
-at PulseOn, with an agenda not too dissimilar from the one at Senseg.
-
-From October 2016 Pekka has been acting more actively in his Research
-Fellow role at Aalto University, while at the same time continuing at
-startup companies, including [Ll co-op](https://luottamuksenloyly.fi).
+Today Pekka is a Professor (PoP) of Industrial Internet at Aalto
+University COMNET, CTO of [Ll co-op](https://luottamuksenloyly.fi),
+and one of the founding members of
+[ValueCraft](http://valuecraft.coop).
 
 ### Expertise
 
@@ -84,19 +76,24 @@ Pekka has authored or co-authored about 100 refereed scientific
 articles, and is the inventor or a co-inventor in some 20 priority
 patents.
 
-Pekka has first-hand experience on six startup companies: Nixu,
-Senseg, Ell-i, Solu, PulseOn, and Ll co-op.  Additionally, during his Ericsson
-times he ran two startup ideas for a few months each, before finding
-out that the markets were not ready for the ideas.
+Pekka has first-hand experience on seven startup companies: Nixu,
+Senseg, Ell-i, Solu, PulseOn, Ll co-op, and ValueCraft.  Additionally,
+during his Ericsson times he ran two startup ideas for a few months
+each, before finding out that the markets were not ready for the
+ideas.
 
 ## Experience
 
 <dl>
-  <dt>Co-counder and CTO, Luottamuksen Loyly co-op, Oct 2016 - present</dt>
+  <dt>Professor of Practise, Aalto University, Jun 2017 - present</dt>
+  <dd>Professor of Industrial Internet, focus on IoT and blockchains</dd>
+  <dt>Founding member, ValueCraft, Jun 2017 - present</dt>
+  <dd>Facilitating blockchain-based community currencies</dd>
+  <dt>Co-counder and CTO, Luottamuksen Loyly (Ll) co-op, Oct 2016 - present</dt>
+  <dd>Applying DLT technology to FinTech</dd>
 
   <dt>Chief Software Architect, PulseOn, Jan 2016 - Sep 2016</dt>
-  <dd>Creation of a software architecture and processes almost from
-  the ground up.</dd>
+  <dd>Recreation of the software architecture and processes.</dd>
 
   <dt>Founder and CTO, Solu Machines, Oct 2014 - Dec 2015</dt>
   <dd>Solving a few "impossible" challenges.</dd>
