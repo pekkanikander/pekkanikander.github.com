@@ -1,20 +1,35 @@
 # Pekka Nikander
 
-Pekka Nikander is a software architect and lead programmer with over
-30 years of industry experience, with an inkling for embedded and things.
+I am a software architect and lead programmer with
+[over 30 years](https://www.pnr.iki.fi/cv) of industry experience,
+with an inkling for embedded and things.  Since summer 2017, I've had
+the pleasure of enjoying
+[academic freedom](https://people.aalto.fi/pekka.nikander) at
+[Aalto University](https://www.aalto.fi).
 
-I prefer e-mail for communication, and don't answer to cold phone calls.
+My focus is in understanding how distributed ledger technologies (aka
+blockchains) can be used to build non-rival and anti-rival
+compensation methods, leading us to a post-capitalistic world.
 
-Email: firstname dot lastname at iki dot fi
+I prefer e-mail for communication, and don't answer to cold phone
+calls.  I don't follow social media.
+
+Personal email: firstname dot lastname at iki dot fi
+
+I've pretty much stopped updating this web site.  Google knows 
+my latest things better than I know my pockets.
 
 Please note that many links below are broken, due to my previous web
 site provider trashing my site and not having time to fish the content
-back.  If you are interested in any of my papers or past projects,
-feel free to send e-mail to me, and I'll add the material to the
-website and mail back to you.  I usually respond to e-mail within a
-day or two.
+back.
 
-## Selected publications
+## Ongoing projects (as of 2018)
+
+* Anti-rival compensation [under development]
+* [SOFIE](https://sofie-iot.eu)
+* [Valuecraft](https://valuecraft.coop) [dormant]
+
+## Selected publications from my past life
 
 * Pekka Nikander, Andrei Gurtov, and Thomas R. Henderson, ["Host
   Identity Protocol (HIP): Connectivity, Mobility, Multi-Homing,
@@ -45,12 +60,13 @@ day or two.
   Proceedings of Cambridge Security Protocols Workshop 2000, April
   3-5, 2000, Cambridge University.
 
-[Full publication list](publications.html)
+[Old full publication list](publications.html)
 
 [Some presentations](presentations)
 
 ## Past projects
 
+* [POINT](https://www.point-h2020.eu)
 * [PURSUIT](http://www.fp7-pursuit.eu/PursuitWeb/) (2010-2011)
 * [Publish-Subscribe Internet Routing Paradigm](http://www.psirp.org/)
   (2008-2010)
