@@ -1,14 +1,26 @@
 ## Profile
 
-Dr. Pekka Nikander has over 30 years software development
-expertise. In 1980 he wrote his first program while still in high
-school, five years later patching live UNIX kernel to fix bugs.  Today
-Pekka is a multi-talented software generalist, able to work on all
-layers from hardware-software interface to user interfaces.
+Pekka Ilmari Nikander is a former serial entrepreneour and university
+professor, working for the benefit of the society and Mother Earth,
+mostly on a voluntary pro bono bases. In 2021, he was awakened to the
+current state of the humankind, leading to a complete change in his
+lifestyle and pursuits, dismissing the western ideals and now aiming
+towards a harmonius spiritual lifestyle, building metaphysical and
+other bridges between the western science and spiritual lifestyle.
+
+Before his awakening, he called himself simply Pekka Nikander. As a
+doctor of technology, he largely focused on further developing ICT
+technology, but also applying it to various areas.
+He gained over 30 years of software development expertise. In 1980 he
+wrote his first program while still in high school, five years later
+patching live UNIX kernel to fix bugs.  He is still able to function as a
+multi-talented software generalist, with skills on all layers from
+hardware-software interface to human-computer interfaces.
 
 ### Career overview
 
-In 1988 Pekka founded [Nixu](https://www.nixu.com), today a leading computer and network
+In 1988 Pekka founded [Nixu](https://www.nixu.com),
+today a leading computer and network
 security consultant company in Finland, driving it for over 10 years,
 followed by another 10 years at various leadership roles at Ericsson
 Research.
@@ -85,11 +97,11 @@ ideas.
 ## Experience
 
 <dl>
-  <dt>Professor of Practise, Aalto University, Jun 2017 - present</dt>
+  <dt>Professor of Practise, Aalto University, Jun 2017 - Apr 2022</dt>
   <dd>Professor of Industrial Internet, focus on IoT and blockchains</dd>
-  <dt>Founding member, ValueCraft, Jun 2017 - present</dt>
+  <dt>Founding member, ValueCraft, Jun 2017 - Feb 2021</dt>
   <dd>Facilitating blockchain-based community currencies</dd>
-  <dt>Co-counder and CTO, Luottamuksen Loyly (Ll) co-op, Oct 2016 - present</dt>
+  <dt>Co-counder and CTO, Luottamuksen Loyly (Ll) co-op, Oct 2016 - Jun 2019</dt>
   <dd>Applying DLT technology to FinTech</dd>
 
   <dt>Chief Software Architect, PulseOn, Jan 2016 - Sep 2016</dt>

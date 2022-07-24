@@ -1,33 +1,33 @@
-# Pekka Nikander
+# Pekka Ilmari Nikander
 
-I am a software architect and lead programmer with
-[over 30 years](https://www.pnr.iki.fi/cv) of industry experience,
-with an inkling for embedded and things.  Since summer 2017, I've had
-the pleasure of enjoying
-[academic freedom](https://people.aalto.fi/pekka.nikander) at
-[Aalto University](https://www.aalto.fi).
+I am a former serial entrepreneur and university professor in my 50s,
+learning a new life on the path. As of 2022, I'm helping
+[Ecolise](https://www.ecolise.eu/about-ecolise/) in preparing Horizon
+Europe funding proposals in order to apply lessons learned from
+ecovillages and permaculture to the European agriculture in the wider
+scale.
 
-My focus is in understanding how distributed ledger technologies (aka
-blockchains) can be used to build non-rival and anti-rival
-compensation methods, leading us to a post-capitalistic world.
+In my past life, I was a software architect and lead programmer for
+[over 30 years](https://www.pnr.iki.fi/cv), mostly focusing on
+embedded and IoT.  In 2017–2022, I had the pleasure of enjoying
+academic freedom at [Aalto University](https://www.aalto.fi).
+My brother still works there.
+
+In addition to embedded and and IoT, I also did quite a lot of work on
+understanding how distributed ledger technologies (aka blockchains)
+could be used to build non-rival and anti-rival compensation methods,
+leading us to a post-capitalistic world.
 
 I prefer e-mail for communication, and don't answer to cold phone
-calls.  I don't follow social media.
+calls. I don't follow social media.
 
 Personal email: firstname dot lastname at iki dot fi
 
-I've pretty much stopped updating this web site.  Google knows 
-my latest things better than I know my pockets.
+I've pretty much stopped updating this web site.
 
-Please note that many links below are broken, due to my previous web
+Please note that some of the links below are broken, due to my previous web
 site provider trashing my site and not having time to fish the content
 back.
-
-## Ongoing projects (as of 2018)
-
-* Anti-rival compensation [under development]
-* [SOFIE](https://sofie-iot.eu)
-* [Valuecraft](https://valuecraft.coop) [dormant]
 
 ## Selected publications from my past life
 
@@ -64,8 +64,12 @@ back.
 
 [Some presentations](presentations)
 
-## Past projects
+## Some past projects
 
+* [ATARCA](https://atarca.eu)
+* [GMeRitS](https://gmerits.eu)
+* [SOFIE](https://sofie-iot.eu)
+* [Valuecraft](https://valuecraft.coop) [dormant]
 * [POINT](https://www.point-h2020.eu)
 * [PURSUIT](http://www.fp7-pursuit.eu/PursuitWeb/) (2010-2011)
 * [Publish-Subscribe Internet Routing Paradigm](http://www.psirp.org/)
@@ -76,11 +80,9 @@ back.
   (2002-2004)
 * [IEEE 802.1x for FreeBSD](eapol.html) (2001-2003)
 * [Mobile and Multihomed Hosts](homeless) (2001)
-* iPoints (2001)
 * [FrameMaker templates]() (1992-2001 or so)
 * [Java for lego RCX](rcx) (2000)
 * [Java Conduits Beans Framework](jacob) (1999-2000)
-* [TeSSA](http://www.tml.hut.fi/Research/TeSSA/) (1998-2001)
 * [Gang-of-Four Design patterns as UML
   models](GoF-models/html/) (1998)
 * Using formal methods to reason about cryptographic protocols (1994-1997)
